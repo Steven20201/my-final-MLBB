@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: black;
 }
 
 html{
@@ -164,19 +164,19 @@ nav.navbar .content .logo a img.ML {
     text-shadow: 0 0 25px #0e2ddd, 0 0 30px #0311d8, 0 0 40px #00cbf6, 0 0 50px #121564, 0 0 60px #4d59ff, 0 0 70px #536cf4, 0 0 80px #4d94ff;
   }
 
-.video-container video{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  object-fit: cover;
-  z-index: -1;
-}
-
+  .video-container video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
 #links {
   
   color: white;
@@ -635,7 +635,7 @@ form button .fa {
 
 .wrapper {
   display: block;
-	margin: 20px auto;
+	
   color: wheat;
   padding: 100px 0;
 }
