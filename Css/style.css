@@ -671,7 +671,7 @@ form button .fa {
 	border-radius: 5px;
 	cursor: pointer;
   list-style: none;
-	transition: all 0.2s ease;
+	transition: all 0.5s ease;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.125);
 }
 
@@ -699,12 +699,13 @@ form button .fa {
 
 .wrapper .item_grp .item a .card-1:hover img{
   transform: scale(1.3);
-  
+  transition: all 0.5s ease;
 }
 
 .wrapper .item_grp .item a .card-1:hover .overlay{
   transform: scale(1.3);
   padding: 10px;
+  transition: all 0.5s ease;
   position: relative;
 }
 

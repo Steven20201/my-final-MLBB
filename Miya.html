@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="flaticon/font/flaticon.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="Css/heros.css">
+    
+    <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
     
@@ -23,23 +25,793 @@
                 <div class="icon cancel-btn">
                     <i class="fa fa-times"></i>
                 </div>
-                <li>
-                    <a href="#" class="desktop-link">Home</a>
-                </li>
-                <li><a href="character.html">Hero</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="tablink" id="defaultOpen" onclick="openPage('main',this)">Heroes</a></li>
+                <li><a  class="tablink" onclick="openPage('main-1',this)">Ability</a></li>
+                <li><a class="tablink" onclick="openPage('main-2',this)">Guide</a></li>
+                <li><a class="tablink" onclick="openPage('main-3',this)">Skin</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fa fa-bars"></i>
             </div>
         </div>
     </nav>
+        <section id="main" class="tabcontent">
+         
+                 <div class="icons">
+                  <img src="image/marksman.png" alt="" style=" float: left; padding: 10px; width: 5em;">
+                <div class="title-con">Miya</div>
+            </div>
+          
+                     <div class="det">
+                        <p>(Marksman)</p>
+                            <p>Reap/Damage</p>
+                    </div>
 
-    <div class="wrapper">
+            <div class="main-top">
+                <div class="first-cont">
+                        
+                
+                    <div class="details">
+                    
+                        <div class="ratio">
+                            <div class="main-perc">
+                                <label>Duability</label>
+                                
+                                <div class="meter orange">
+                                    <span style="width: 62%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                <label>Offense</label>
+                                    
+                                <div class="meter yellow">
+                                    <span style="width: 95%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                <label>Ability Effects</label>
+                                
+                                <div class="meter blue">
+                                    <span style="width: 42%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                    <label>Difficulty</label>
+                                    
+                                    <div class="meter green">
+                                        <span style="width: 10%"></span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mastery">
+                        <h2>Mastery Code</h2>
+                        <div class="chap-1">
+                            <h1>Chapter 1 : Moon Priestess</h1>
+                            <h4>Task Target: Use [Hidden Moonlight] a total of 10 times</h4>
+                            <p>Born at the end of the era of strife, Miya bore witness to the indescribable tragedies that befell the Elves in the endless war, followed by the Moon Goddess to salvation, then personally experienced the second continental war with the humans, and witnessed many of her people degenerate into Dark Elves after the corruption of the abyss defiled the Shadow Swamp. After experiencing all these, Miya grew up nad became a member of the priesthood.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 2 : Moonlit Forest</h1>
+                            <h4>Task Target: Use [Arrow of Eslipse] to immobilize an enemy hero a total of 20 tmes</h4>
+                            <p>With the continuous expansion of the abyss and the demons, the fog of war once again shrouded the Land of Dawn. The faction headed by the Elf King, Estes, believed that the evil abyss would bring disaster to the whole continent, and the Elves must take the initiative to destroy the demons. But Miya was on the opposite side of this internal conflict. She still firmly remembered the last mandate of the Moon Goddess - to protect her own people, no matter what. Therefore, she did not want to see any more Elven lives sacrificed in the name of righteousness. In the end, the vast majority of the Elves chose to defend the Azrya Woodlands.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 3 : Moon Eclipse</h1>
+                            <h4>Task Target: Use [Moon Arrow] to deal a total of 150000 damage</h4>
+                            <p>However, Miya's decision was ushering in another catastrophe. In order to attack the Moniyan Empire, the demon army invaded the Moniyan Plains from the Moonlit Forest. The King of Fire Demons, Thamuz, set fire to the Tree of Life, upon which many Elves resided, raining an inferno of death upon the forest. Miya blamed herself for the tragedy. She prayed day and night in the Luna Temple, hoping that the great Moon Goddess could grant her enlightenment and guide her in the difficult path forward. However, the light of the Moonlit Forest become dimmer by the day.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 4 : Crescent Moon</h1>
+                            <h4>Task Target: Get 60 Kills with full stacks of [Moon Blessing]</h4>
+                            <p>In the distance, the orcs and demons were going to attack the Moonlit Forest. With the great Moon Goddess still asleep, and the strength of Estes declining, Miya had o choice. She was forced to shoulder the duties of the Priestess of the Moon and lead her people to defend their homeland. She took up her silver bow, and joined her people to fight for her homeland.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="about" style="color: rgb(231, 196, 130);">
+            <div class="content">
+                
+              <div class="title">Story</div>
+              <p>Though Elves enjoy remarkably long lives, they do not possess immortal bodies. Throughout the long history of the Land of Dawn, this gentle and fragile race endured great pain and suffering before finally making their home in the Azrya Woodlands. Miya lived through all of this.</p>
+              <p>Born at the end of the era of strife, Miya bore witness to the indescribable tragedies that befell the Elves in the endless war, followed the Moon Goddess to salvation,, then personally experienced the second continental war with humans, and witnessed many of her people degenerate into Dark Elves after the corruption of the abyss defiled the Shadow Swamp.</p>
+              <p>Devastated by the ill fate of her race and the scars of war, Miya dreamt of a peaceful life, and this dream finally came true when the Moon Goddess used all her strength to create the Lunar Aegis, sheltering the Elves of the Azrya Woodlands and allowing them to thrive under the aegis's protection.</p>
+              <p>After this, the Moon Goddess entered a deep slumber, and Miya became a member of the priesthood. For thousands of years, she served in the Luna Temple with absolute piety, praying for the reawakening of the Moon Goddess and that the Goddess would one day be able to protect the disaster-stricken Elves forever.</p>
+              <p>However, this period in her life was destinated to come an end. With the continuous expansion of the abyss and the demons, the frog of war once again shrouded the Land of Dawn. When the humans and the abyssal demons fell into a stalemate, conflict arose among the Elves in their attitutes toward the war. The faction headed by the <a>Elf King, Estes</a> , believed that the evil abyss would bring disaster to the whole continent, and the Elves must take the initiative to destroy the demons.</p>
+              <p>Many other Elves believed that their people had suffered enough, and should not become embroiled in war again, instead living safely within the borders of the Azrya Woodlands under the protection of the Moon Goddess's Aegis. What Estes just couldn't understand was that his sister, Miya, was on the opposite side of this internal conflict. Through she cherished peace, Miya still firmly remembered the last mandate of the Moon Goddess - to protect her own people, no matter what. Therefore, she did not want to see any more Elven lives sacrificed in the name of righteousness.</p>
+              <p>In the end, the vast majority of the Elves chose to defend the Azya Woodlands, but little did they know, they were ushering in another catastrophe. The Lunar Aegis possessed the power of prevent the spread of corruption in their domain, but it could not stop the powerful demon army. In order to attack the Moniyan Empire, the demon army bypassed the insurmountable Lantis Mountains and chose to set out from the Shadow Swamp, invading the Moniyan Plains from the Moonlit Forest.</p>
+              <p>In the face of the sudden demon army invasion, although the Elves put up a tenacious resistance, the demon army swept through the Moonlit Forest. The <a href="">King of Fire Demons, Thamuz</a>, set fire to the Tree of Life, upon which many Elves resided, raining an inferno of death upon the forest.</p>
+              <p>Miya blamed herself for the tragedy. She wanted to protect her people by avoiding war, but her inaction resulted in an even bigger greater sacrifice. And so, she prayed day and night in the Luna Temple, hoping that the great Moon Goddess could grant her enlightenment and guide her in the difficult path forward.</p>
+              <p>However, the sleeping Moon Goddess did not grant Miya the enlightenment she sought, and the light of the Moonlit Forest become dimmer by the day. Estes and some of the other Elves began to weaken as a result of the waning lunar energy. In the distance, the orcs and demons lead by <a href="">Balmond</a> gathered in the Stormeye Wastelands. This time, their target was not the Moniyan Empire, but the Moonlit Forest itself</p>
+              <p>With the great Moon Goddess still asleep, and the strength of Estes declining, Miya had no choice. Whether she was prepared or not, war had finally found her once more. She was forced to shoulder the duties of the Priestess of the Moon and lead her people to defend their homeland.</p>
+              <p>When the sound of the orc war drums could be heard approaching, the troops of the Moonlit Forest also sounded a horn that had not been heard for thousands of years. Miya, the Priestess of the Moon, took up her silver bow, and joined her people to fight in the moonlight.</p>
+              <p>"Greate Moon Gooddess, if war should come to this land, sacrifice cannot be avoided. Please give me the strength, courage, and faith to protect my people and out homeland!"</p>
+              
+            
+            </div>
+          </div>
+            </div>
         
-    </div>
+           
+          
+        </section>
+        
+        <section id="main-1" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Skills</div>
+            </div>
+            <div class="tabs tabs-style-iconbox" style="color: bisque;">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home"><img src="image/Moon_Blessing.png" alt=""><span>Moon Blessing</span></a></li>
+                        <li><a href="#section-iconbox-2" class="icon icon-gift"><img src="image/Moon_Arrow.png" alt=""><span>Moon Arrow</span></a></li>
+                        <li><a href="#section-iconbox-3" class="icon icon-upload"><img src="image/Arrow_of_Eclipse.png" alt=""><span>Arrow of Eclipse</span></a></li>
+                        <li><a href="#section-iconbox-4" class="icon icon-coffee"><img src="image/Hidden_Moonlight.png" alt=""><span>Hidden Moonlight</span></a></li>
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Moon Blessing</h2>
+                                <div class="buff">
+                                    <span> BUFF </span>
+                                
+                                </div>
+                                <div class="passive">
+                                    <span>Passive</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Each time Miya hits a target with her Basic Attack, her Attack Speed will be increased by 5%. This effect stacks up to 5 times and lasts for 4 seconds.</p>
+                                <p>After reaching full stacks, Miya summons a Moonlight Shadow To aid her on each Basic Attack, dealing 30 <span style="color:rgb(238, 129, 4)">(+30% Total Physical Attack)</span> <span style="color:red;">Physical Damage</span> (this damage can crit, but doesn't carry attack effects).</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </section>
+                    <section id="section-iconbox-2">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Moon Arrow</h2>
+                                <div class="two-buff">
+                                     <div class="buff">
+                                        <span> BUFF </span>
+                                    </div>
+                                    <div class="Aov">
+                                        <span> AoE </span>
+                                    </div>
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 11.0  Mana Cost: 60  Type: Physical Basic ATK</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Miya shoots two extra arrows (can trigger attack effects) on each Basic Attack, dealing 10 <span style="color: rgb(238, 129, 4)">(+100%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> to the primary target and 30% to the rest.</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                    <th>Lv.4</th>
+                                    <th>Lv.5</th>
+                                    <th>Lv.6</th>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>60</td>
+                                    <td>70</td>
+                                    <td>80</td>
+                                    <td>90</td>
+                                    <td>100</td>
+                                    <td>110</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Base Damage</td>
+                                    <td>10</td>
+                                    <td>20</td>
+                                    <td>30</td>
+                                    <td>40</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Duration</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </section>
+
+                    <section id="section-iconbox-3">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Arrow of Eclipse</h2>
+                                <div class="two-buff">
+                                     <div class="CC">
+                                        <span> CC </span>
+                                    </div>
+                                    <div class="Aov">
+                                        <span> AoE </span>
+                                    </div>
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 8.0  Mana Cost: 80  Type: Physical Skill</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Miya calls upon the power of Moon Eclipse and launches an empowered arrow in the designated area. Upon landing, the empowered arrow deals 90 <span style="color: rgb(238, 129, 4)">(+45%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> to enemies in the are, immobilizes them for 1.2s, and splits into 8 minor arrows that scattering around. Each mior arrow deals 30 <span style="color: rgb(238, 129, 4)">(+45%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> and shows the enemy by 30% for 2s.</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                    <th>Lv.4</th>
+                                    <th>Lv.5</th>
+                                    <th>Lv.6</th>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>80</td>
+                                    <td>90</td>
+                                    <td>100</td>
+                                    <td>110</td>
+                                    <td>120</td>
+                                    <td>130</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Base Damage</td>
+                                    <td>90</td>
+                                    <td>120</td>
+                                    <td>150</td>
+                                    <td>180</td>
+                                    <td>210</td>
+                                    <td>240</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Duration</td>
+                                    <td>30</td>
+                                    <td>40</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>70</td>
+                                    <td>80</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </section>
+                    <section id="section-iconbox-4">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Hidden Moonlight</h2>
+                                <div class="two-buff">
+                                     <div class="CC">
+                                        <span> CC </span>
+                                    </div>
+                                    <div class="Aov">
+                                        <span> AoE </span>
+                                    </div>
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 46.0  Mana Cost: 120</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Miya removes all her debuffs right away, conceals herself, and increases Movement Speed by 35% for up to 2.0s. (Initiating an attack will end the state.)</p>
+                                <p>Miya also gains full stacks of Moon Blessing when the concealment is over.</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Cooldown</td>
+                                    <td>46.0</td>
+                                    <td>36.0</td>
+                                    <td>26.0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>120</td>
+                                    <td>145</td>
+                                    <td>170</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Movement Speed Bonus</td>
+                                    <td>35%</td>
+                                    <td>50%</td>
+                                    <td>65%</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Duration</td>
+                                    <td>2.0</td>
+                                    <td>2.0</td>
+                                    <td>2.0</td>
+                                
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+          
+        </section>
+       
+
+
+        <section id="main-2" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Miya Guide</div>
+            </div>
+            
+
+            <div class="tabs tabs-style-iconbox" style="color: rgb(255, 153, 0);">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home">Item Set</span></a></li>
+                        <li><a href="#section-iconbox-2" class="icon icon-gift">Best Emblem</span></a></li>
+                        <li><a href="#section-iconbox-3" class="icon icon-gift">Best Spell</span></a></li>
+                        <li><a href="#section-iconbox-4" class="icon icon-gift">Counters</span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <h3 style="text-align: left;">Default Builds</h3>
+                        
+                        <div class="att">
+                            <h3>Attack Speed</h3>
+                            <div class="atkitem">
+                                <div class="eqi">
+
+                                    <img src="image/Swift_Boots.png" alt="Swift_Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Demon_Hunter_Sword.png" alt="Demon_Hunter_Sword">
+                                    <span>Demon Hunter Sword</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Corrosion Scythe.png" alt="Corrosion Scythe">
+                                    <span>Corrosion Scythe</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Golden_Staff.png" alt="Golden_Staff">
+                                    <span>Golden Staff</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Blade of Despire.jpg" alt="Blade of Despire">
+                                    <span>Blade of Despire</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Immortality.png" alt="Immortality">
+                                    <span>Immortality</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="att">
+                            <h3>Anti Heal</h3>
+                            <div class="atkitem">
+                                <div class="eqi">
+
+                                    <img src="image/Swift_Boots.png" alt="Swift_Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Windtalker.png" alt="Windtalker">
+                                    <span>Windtalker</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Haas's Claws.png" alt="Haas's Claws">
+                                    <span>Haas's Claws</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Blade of Despire.jpg" alt="Blade of Despire">
+                                    <span>Blade of Despire</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Item_ML_Sea_Halberd.png" alt="Sea Halberd">
+                                    <span>Sea Halberd</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Wings-of-the-Apocalypse-Queen.png" alt="Queen's Wing">
+                                    <span>Queen's Wing</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="att">
+                            <h3>Hot Gear</h3>
+                            <div class="atkitem">
+                                <div class="eqi">
+
+                                    <img src="image/Swift_Boots.png" alt="Swift_Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Windtalker.png" alt="Windtalker">
+                                    <span>Windtalker</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Berserker_s_Fury-removebg-preview.png" alt="Berserker_s_Fury">
+                                    <span>Berserker's Fury</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Scarlet_Phantom.png" alt="Scarlet_Phantom">
+                                    <span>Scarlet Phantom</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Haas's Claws.png" alt="Haas's Claws">
+                                    <span>Haas's Claws</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/rose-gold-meteor.png" alt="Rose Gold meteor">
+                                    <span>Rose Gold meteor</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                        <div class="att">
+                            <h3>Attack & Defend</h3>
+                            <div class="atkitem">
+                                <div class="eqi">
+
+                                    <img src="image/Haas's Claws.png" alt="Haas's Claws">
+                                    <span>Haas's Claws</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Swift_Boots.png" alt="Swift_Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Windtalker.png" alt="Windtalker">
+                                    <span>Windtalker</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Berserker_s_Fury-removebg-preview.png" alt="Berserker_s_Fury">
+                                    <span>Berserker's Fury</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Malefic_Roar.png" alt="Malefic_Roar">
+                                    <span>Malefic_Roar</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Wind_of_Nature-removebg-preview.png" alt="Wind of Nature">
+                                    <span>Wind of Nature</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+
+
+                    <section id="section-iconbox-2">
+                     <div class="emb">
+                         <div class="mark-emb">
+                             <h3>Miya Custom Marksman Set</h3>
+                             <img src="image/Miya-Marksman-Emblem.webp" alt="">
+                         </div>
+                         <div class="mark-emb">
+                            <h3>Miya Custom Assassin Set</h3>
+                            <img src="image/Miya-Assassin-Emblem.webp" alt="">
+                        </div>
+                        
+                     </div>
+                     <div class="abo">
+                           <p>Due to the mechanic of her passive, Miya tend to buy attack speed item after two attack damage items first, much more effective.</p>
+                           <p>The player may want to keep attacking to keep the passive active most of the time, this ability have lasting 4 seconds.</p>
+                            <p>Her 1st skill is extremely powerful late game, especially with items. This ability shines and able to attack 3 targets for clearing the lane or attacking more heroes to clash.</p>
+                            <p>Her  2nd skill, Arrow of eclipse is good zoning, crowd control ability, pretty good for a marksman, helps you flee or chase an enemy hero.</p>
+                            <p>  For most powerful ultimate for a marksman at all time, use this ability wisely. Using for escape and increasing damage.</p>
+                     </div>
+                        
+                    </section>
+
+
+                    
+                    <section id="section-iconbox-3">
+                       <div class="spell">
+                           <h3>Best Spell for Miya</h3>
+                           <div class="it">
+                               <p style="font-size: 14px">In solo Queue, if you don't have any Escape spell, then you are dead easily. So I recommended for you to use flicker for Miya. It can help you to escape easily among enemies even though her ultimate is invisible. </p>
+                           <img src="image/flicker.png" alt="Flicker">
+                           <span>Flicker</span>
+                           </div>
+                           <div class="it">
+                               <p style="font-size: 14px">Sometimes, when player plays wth duo or trio, they didn't focus on escaping skill, they mainly focus on attack speed ATK, so that they use inspire spell to increase in early game and late game.</p>
+                           <img src="image/inspore.png" alt="Inspire">
+                           <span>Inspire</span>
+                           </div>
+                           
+
+                       </div>
+                        
+                    </section>
+
+
+                   <section id="section-iconbox-4">
+                      <div class="counter">
+                          <div class="counter-name">Best Teammates</div>
+                          <div class="body-name">
+                              <img src="image/lolita.png" alt="lolita">
+                              <div class="lol">
+                                  <p><span style="font-weight: 700 !important;">Lolita:</span> Miya is very fragile and requires the protection of her teammates to reach her full damage protential. Lolita can help her to achieve this.</p>
+                              </div>
+                          </div>
+                      </div>
+                        
+
+                      <div class="counter">
+                        <div class="counter-name">Counters</div>
+                        <div class="body-name">
+                            <img src="image/Hayabusa.png" alt="Hayabusa">
+                            <div class="lol">
+                                <p><span style="font-weight: 700 !important;">Hayabusa:</span> Miya is very squishy, and without the aid of support heroes, is susceptible to assassins.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="counter">
+                        <div class="counter-name">Countered by</div>
+                        <div class="body-name">
+                            <img src="image/hylos.png" alt="Hylos">
+                            <div class="lol">
+                                <p><span style="font-weight: 700 !important;">Hylos:</span> Miya’s damage is very high, so tanks who lack high damage will find it difficult to deal with her in the late game.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+        </section>
+
+        <section id="main-3" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Skins and Sacred Statue</div>
+            </div>
+
+            <div class="tabs tabs-style-iconbox" style="color: bisque;">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home">Skins</span></a></li>
+                        <li><a href="#section-iconbox-2" class="icon icon-gift">Scared Statue</span></a></li>
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <div class="miyas">
+                            <div class="card">
+                                <img src="image/Miya_infobox.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Moonlight Archer</h4>
+                                <span style="font-size: 13px; ">Revamped Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Moonlight_Archer_S1.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Moonlight Archer</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Moonlight_Archer_Old.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Moonlight Archer</h4>
+                                <span style="font-size: 13px; ">1st Remodel</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Moonlight_Archer_Old rework.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Moonlight Archer</h4>
+                                <span style="font-size: 13px; ">1st Rework</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Moonlight_Archer_2nd_remodel.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Moonlight Archer</h4>
+                                <span style="font-size: 13px; ">2nd Remodel</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Burning_Bow.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Burning Bow</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Burning_Bow_rework.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Burning Bow</h4>
+                                <span style="font-size: 13px; ">1st Remodel</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/painted-skin-miya.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Burning Bow</h4>
+                                <span style="font-size: 13px; ">Painted Skin</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/miyachristmas cheer.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Christmas Carnivalr</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Miya christmax.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Christmas Carnival</h4>
+                                <span style="font-size: 13px; ">1st Remodel</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Miya limited skin.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Honor</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/miya-mobile-legend-suzuhime.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>suzuhime</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Captain_Thorns_old.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Captain Thorns</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/sweet fantasy.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Sweet Fantasy</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Jungle_Ranger.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Jungle Ranger</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Legend Miya Skin.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Modena Butterfly</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </section>
+                    <section id="section-iconbox-2">
+                       <div class="scared-status">
+                           <a href="image/Miya Stated.jpeg" target="_blank" style="text-decoration: none;">
+                           <div class="card">
+                               <img src="image/Moonlight_Arrow_Statue.jpg" alt="Moonlight Arrow">
+                               <div class="cota">
+                                   Moonlight Arrow
+                               </div>
+                            
+                           </div>
+                        </a>
+                           <div class="abouut">
+                               <p>Scared status can only be summoned in Classic/Ranked/Custom(5v5)</p>
+                           <p>Summon Cooldown: 5min</p>
+                           <p>Star-Raising Points Bonus +5</p>
+                           </div>
+                           
+                       </div>
+                    </section>
+
+                    
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/cbpFWTabs.js"></script>
+            <script>
+                (function() {
+                    [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+                        new CBPFWTabs( el );
+                    });
+    
+                })();
+            </script>
+
+        <script>
+			function openPage(pageName,elmnt) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+ 
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
     <script>
         const body = document.querySelector("body");

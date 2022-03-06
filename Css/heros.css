@@ -7,6 +7,24 @@
   font-family: 'Poppins', sans-serif;
  
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::selection{
+background: rgb(0,123,255,0.3);
+}
+
+
+body {
+  background-color: #000;
+}
+
 
 .navbar{
     position: fixed;
@@ -43,7 +61,7 @@
 
   .menu-list li a{
     color: #fff;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     margin-left: 25px;
     text-decoration: none;
@@ -123,11 +141,686 @@
         }
 
 
-    .wrapper {
-        background: url("../image/Moonlight\ Archer\ Miya.png") no-repeat;
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+    #main .details {
+      padding: 40px 0 0 0;
     }
+
+    #main .nam .nam_img {
+      display: flex;
+      font-size: 2em;
+      align-items: center;
+      border-bottom: 2px solid black;
+    }
+
+  #main .nam .nam_img img {
+    width: 50px;
+    height: 50px;
+    
+  }
+    #main .over {
+      height: 100px;
+    }
+    #main .nam {
+      color: wheat;
+      text-align: center;
+      height: 30vh;
+    }
+
+    .meter {
+      box-sizing: content-box;
+      height: 20px;
+      position: relative;
+      background-color: #555;
+      padding: 10px;
+      width: 50%;
+      border-radius: 20px;
+      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    }
+
+    #main .details .main-perc {
+      display: flex;
+      margin-top: 20px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    #main .details .main-perc label {
+      display: block;
+      color: wheat;
+      padding: 0 20px;
+     
+      width: 30%;
+  
+    }
+
+
+    .meter >span {
+      display: block;
+      height: 100%;
+      width: 100%;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .orange > span {
+      background-image: linear-gradient(#f5d33e, #f6c800);
+    }
+
+    .yellow > span {
+      background-image: linear-gradient(#fab041, #ff9900);
+    }
+    .blue > span {
+      background-image: linear-gradient(rgb(55, 169, 231), rgb(0, 148, 225));
+    }
+    .green > span {
+      background-image: linear-gradient(rgb(75, 241, 158), rgb(0, 214, 108));
+    }
+
+
+    
+.about{
+  padding: 40px 0 0 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+  padding: 15px;
+  text-shadow: 0px 0px 20px #f3d87e, 0px 0px 30px #e1ec46, 0px 0px 40px #e0dd1065, 0px 0px 50px #f0e00b, 0px 0px 60px #ecb708;
+}
+
+.title-con{
+  font-size: 55px;
+  color: rgb(247, 213, 151);
+  font-weight: 700;
+  text-shadow: 0px 0px 20px #f4f0f0, 0px 0px 30px #ee6363, 0px 0px 40px #ac2424, 0px 0px 50px #de0a0a, 0px 0px 60px #620d0d, 0px 0px 70px #3b0606;
+}
+
+#main, #main-1, #main-2, #main-3{
+  background-image: url(../image/Moonlight\ Archer\ Miya.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+  font-size: 14px;
+}
+.icons,.tab {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid rgb(243, 181, 10);
+  padding-top: 35rem;
+}
+
+.det {
+  color: rgb(247, 213, 151);
+  text-align: center;
+}
+
+.det p {
+  text-shadow: 0px 0px 20px #e43333, 0px 0px 30px #c04a4a, 0px 0px 40px #ff0909, 0px 0px 50px #bc0b0b, 0px 0px 60px #ff0000c9, 0px 0px 70px #540000;
+
+}
+
+@media screen and (min-width: 1000px) {
+  
+
+.main-top {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 15px;
+  grid-template-areas: 
+  "first-cont about";
+}
+
+.main-top .first-cont {
+  grid-area: first-cont;
+}
+
+.main-top .about {
+  grid-area: about;
+}
+}
+
+#main .main-top .first-cont .mastery h2 {
+  color: rgb(231, 196, 130);
+  text-align: center;
+  text-shadow:2px 2px 20px #e8ddb4, 2px 2px 30px #fcde70, 2px 2px 40px #f2d052, 2px 2px 50px #f4c412;
+  padding: 15px;
+}
+
+#main .main-top .first-cont .mastery .chap-1 {
+  padding-top: 20px;
+}
+
+#main .main-top .first-cont .mastery .chap-1 h1{
+  font-size: 25px;
+  border-bottom: 1px solid wheat;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  color: rgb(243, 215, 164);
+}
+
+#main .main-top .first-cont .mastery .chap-1 h4 {
+  color: rgb(243, 215, 164);
+  padding: 10px;
+  
+}
+
+#main .main-top .first-cont .mastery .chap-1 p {
+  color: rgb(247, 213, 151);
+  font-size: 14px;
+}
+
+.main-top .about .content {
+  padding: 20px;
+}
+
+#main .main-top .about .content p a {
+  color:rgb(247, 213, 151);
+  text-decoration: none;
+}
+
+#main .main-top .about .content p a:hover {
+  text-decoration: double;
+  color: #f5d33e;
+  text-shadow: 0px 0px 20px blueviolet;
+
+}
+
+
+
+
+#main-1 h2{
+  color:rgb(247, 213, 151) ;
+}
+
+
+
+.tabs {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	font-weight: 300;
+	font-size: 1.25em;
+}
+
+/* Nav */
+.tabs nav {
+	text-align: center;
+}
+
+.tabs nav ul {
+	position: relative;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+	list-style: none;
+	-ms-box-orient: horizontal;
+	-ms-box-pack: center;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+.tabs nav ul li {
+	position: relative;
+	z-index: 1;
+	display: block;
+	margin: 0;
+	text-align: center;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.tabs nav a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 2.5;
+}
+
+.tabs nav a span {
+	vertical-align: middle;
+	font-size: 0.75em;
+}
+
+.tabs nav li.tab-current a {
+	color: #74777b;
+}
+
+.tabs nav a:focus {
+	outline: none;
+}
+
+
+
+
+.tabs nav li.tab-current a {
+	color: #3c88eb;
+}
+
+.tabs-style-iconbox nav {
+	background: rgba(255,255,255,0.4);
+}
+
+
+.tabs-style-iconbox nav ul li a {
+	overflow: visible;
+	padding: 2em 0;
+	line-height: 1;
+	transition: color 0.2s;
+  color: black;
+  text-decoration: none;
+}
+
+.tabs-style-iconbox nav ul li a span {
+	font-weight: 700;
+	font-size: 0.7em;
+  	color: #f5bb1c;
+    z-index: 1  ;
+}
+
+.tabs-style-iconbox nav ul li.tab-current a {
+	background: rgb(55, 154, 235);
+	box-shadow: -1px 0 0 #fff;
+  color: wheat;
+}
+
+.tabs-style-iconbox nav ul li.tab-current a::after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	border-width: 10px;
+	border-top-color: #fff;
+	content: '';
+	pointer-events: none;
+}
+
+.tabs-style-iconbox nav ul li:first-child::before,
+.tabs-style-iconbox nav ul li::after {
+	position: absolute;
+	top: 20%;
+	right: 0;
+	z-index: -1;
+	width: 1px;
+	height: 60%;
+	content: '';
+}
+
+.tabs-style-iconbox nav ul li:first-child::before {
+	right: auto;
+	left: 0;
+}
+
+.tabs-style-iconbox .icon::before {
+	display: block;
+	margin: 0 0 0.25em 0;
+}
+
+.content-wrap section.content-current {
+	display: block;
+}
+
+.content-wrap {
+	position: relative;
+}
+
+.content-wrap section {
+	display: none;
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 1200px;
+	text-align: center;
+}
+
+.content-wrap section.content-current {
+	display: block;
+}
+
+.content-wrap section p {
+	margin: 0;
+	padding: 0.75em 0;
+
+	font-weight: 900;
+	font-size: 4em;
+	line-height: 1;
+}
+
+/* Fallback */
+.no-js .content-wrap section {
+	display: block;
+	padding-bottom: 2em;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-home img,
+#main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-gift img,
+#main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-upload img,
+#main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-coffee img
+{
+  display: block;
+    padding-bottom: 9px;
+    margin: 0 auto;
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .skills,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .skills,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .skills,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills
+{
+text-align: left;
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .skills .buff,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .skills .buff,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .skills .buff,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills .buff
+{
+  background: rgb(4, 126, 226);
+  color: white;
+  width: fit-content;
+  font-size: 18px;
+  padding: 0 20px;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap .skills .CC {
+  background: rgb(245, 6, 6);
+  color: white;
+  width: fit-content;
+  font-size: 18px;
+  padding: 0 20px;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+}
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap .skills .two-buff{
+  display: flex;
+  align-items: center;
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap .skills .two-buff .Aov {
+background:#fea500 ;
+width: fit-content;
+border-radius: 5px;
+font-size: 18px;
+padding: 0 20px;
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .moon-bless .description,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .moon-bless .description,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .moon-bless .description,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .description {
+  border-bottom: 1px solid rgb(117, 183, 245);
+} 
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .moon-bless .description p,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .moon-bless .description p,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .moon-bless .description p,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .description p
+{
+  font-size: 14px;
+  text-align: left;
+  font-weight: 600;
+  padding: 20px;
+  color: #888;
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .moon-bless,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .moon-bless,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .moon-bless,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless
+{
+  border: 1px solid #555;
+  margin: 0 25px;
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .moon-bless .skills,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .moon-bless .skills,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .moon-bless .skills,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .skills
+{
+  border-bottom: 1px solid #555;
+  padding: 10px;
+  background: linear-gradient(180deg, #484444, #4e4b4b,#4c4242,transparent, transparent);
+}
+
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .skills .passive,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .skills .passive,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .skills .passive,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills .passive
+{
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+  padding: 10px;
+}
+
+table td.tab-main {
+  text-align: left;
+}
+
+table tr:nth-child(even){background-color: #2c92d69a; }
+
+@media screen and (max-width:450px){
+  table {
+    width: 100%;
+    padding: 0;
+  }
+  .content-wrap section {
+    padding: 0.5em;
+  }
+
+  table td.tab-main {
+    font-size: 12px;
+  }
+
+  #main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-home img,
+  #main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-gift img,
+  #main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-upload img,
+  #main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-coffee img{
+    width:60px;
+  }
+
+  #main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-home span,
+#main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-gift span,
+#main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-upload span,
+#main-1.tabcontent .tabs.tabs-style-iconbox nav ul li a.icon.icon-coffee span {
+  font-size: 12px;
+}
+}
+
+
+
+.content-wrap .att h3{
+  background: linear-gradient(180deg, #0400ff, transparent) ;
+  border-radius: 10px;
+  text-shadow: 0px 0px 20px #03deee, 0px 0px 25px #03a4ee, 0px 0px 30px #0307ee;
+}
+
+.content-wrap .att .atkitem {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-around;
+}
+
+.content-wrap .att .atkitem .eqi img{
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  display: block;
+}
+
+.content-wrap .att .atkitem .eqi  {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrap .emb  {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content-wrap #section-iconbox-2 .abo p {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.content-wrap #section-iconbox-2 .abo {
+  padding-top: 10px;
+}
+
+.spell {
+  text-align: left;
+}
+
+.spell .it img {
+  width: 40px;
+  display: block;
+  margin: 0 0 12px 12px;
+}
+
+.spell .it {
+  padding: 20px;
+}
+
+#section-iconbox-4 .counter .counter-name {
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+  background: linear-gradient(180deg, #1e40e8, transparent, transparent);
+  border-bottom: 1px solid whitesmoke;
+}
+
+#section-iconbox-4 .counter .body-name img {
+  float: left;
+  padding: 15px;
+}
+
+#section-iconbox-4 .counter .body-name .lol p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  padding: 20px;
+}
+
+@media screen and (min-width: 439px) {
+  #section-iconbox-4 .counter {
+  height: 15rem;
+}
+
+}
+
+@media screen and (max-width: 395px) {
+  .tabs-style-iconbox nav ul li {
+    width: 22.5%;
+  }
+
+  .tabs-style-iconbox nav ul li a {
+    font-size: 12px;
+  }
+
+  #section-iconbox-4 .counter .body-name .lol p {
+    font-size: 14px;
+    height:12rem ;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+  .content-wrap .att .atkitem .eqi img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .content-wrap .att .atkitem .eqi span {
+    font-size: 12px;
+  }
+}
+.abouut img {
+  border-radius: 20px;
+}
+
+.scared-status .card .cota {
+  color: rgb(224, 30, 224);
+}
+
+.abouut p{
+  font-size: 15px !important;
+}
+
+.content-wrap section#section-iconbox-1 .card {
+  position: relative;
+  max-width: 300px;
+}
+
+.content-wrap section#section-iconbox-1 .card img {
+  width: 300px;
+  border-radius: 20px;
+  display: block;
+  height: 535px;
+}
+
+.content-wrap section#section-iconbox-1 .card .ovre {
+  position: absolute;
+  bottom: 0%;
+  text-align: center;
+  color:rgb(243, 215, 164);
+  width: 100%;
+  opacity: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: linear-gradient(359deg, #002bff, #002bff, transparent);
+padding: 15px;
+}
+
+section .miyas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+@media screen and (min-width:  680px) {
+  section .miyas {
+    
+    gap: 35px;
+    justify-content: space-between;
+  }
+}
