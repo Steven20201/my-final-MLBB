@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends |  Emblems</title>
+    <link rel="shortcut icon" href="image/applogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/emblem.css">
+    <link rel="stylesheet" href="flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="ML" src="image/ML_logo.png" alt="ML_logo">
+                </a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fa fa-times"></i>
+                </div>
+                <li>
+                    <a href="#" class="desktop-link">Home</a>
+                  
+                </li>
+                <li><a href="character.html">Hero</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <h2>Mobile Legends Emblems</h2>
+            <p>Everything you need to know about Emblems in Mobile Legends</p>
+        </div>
+
+    </div>
+
+    <section id="emblems">
+        <div class="emblems-det">
+                 <div class="emb">
+                    <div class="emb-head">
+                    Information about Emblems  
+                    </div>
+                
+                    <div class="emb-detail">
+                        <p>In Mobile Legends, the emblem is one of the most important things you should know. The level itself starts from level 1 until it reaches its maximum level, which is level 60 which you can increase by using magic dust and battle points.</p>
+                        <p><span style="font-weight: 700;">How many emblems are there in this Mobile Legends?</span> The answer is there are 9 sets of emblems. Two of them (Physical emblem and Magical emblem) are general emblem sets that have been opened automatically from the beginning. The rest of 7 emblem sets are unlocked when your account has reached level 10.</p>
+                        <p>There are 9 emblem sets in Mobile Legends. They are Physical emblem, Magical emblem, Tank emblem,Jungle emblem, Assassin emblem, Mage emblem, Fighter emblem, Support emblem and marksman emblem.</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="image/all-emblem.jpg" alt="Emblem set">
+                    <span>Emblems</span>
+                </div>
+            
+        </div>
+    </section>
+ 
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick=()=> {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+            body.classList.add("disabledScroll");
+        }
+    
+        cancelBtn.onclick = ()=>{
+          menu.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          body.classList.remove("disabledScroll");
+        }
+    
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+</body>
+</html>

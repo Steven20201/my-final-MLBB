@@ -145,6 +145,9 @@ nav.navbar .content .logo a img.ML {
 }
 
 
+
+
+
 .space-large   {
   height: 60px;
 }
@@ -163,6 +166,7 @@ nav.navbar .content .logo a img.ML {
     font-size: 50px;
     text-shadow: 0 0 25px #0e2ddd, 0 0 30px #0311d8, 0 0 40px #00cbf6, 0 0 50px #121564, 0 0 60px #4d59ff, 0 0 70px #536cf4, 0 0 80px #4d94ff;
   }
+
 
   .video-container video{
     width: 100%;
@@ -249,6 +253,9 @@ nav.navbar .content .logo a img.ML {
 #links .card .overlay:hover, #upcoming .welcom .card a .overlay-text:hover {
   text-shadow: 0 0 25px #0e2ddd, 0 0 30px #0311d8, 0 0 40px #00cbf6, 0 0 50px #121564, 0 0 60px #4d59ff, 0 0 70px #536cf4, 0 0 80px #4d94ff;
 }
+
+
+
 
 
 
