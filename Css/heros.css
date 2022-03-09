@@ -98,7 +98,7 @@ body {
   }
 
   .navbar .content .logo a .fa.fa-reply:hover {
-    transition: scale(1);
+    transform: scale(1.1);
   }
 
  
