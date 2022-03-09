@@ -89,10 +89,16 @@ body {
   .navbar .content .logo a .fa.fa-reply
   {
       padding: 20px;
+      color: #03deee;
+      text-shadow: 1px 3px 5px black;
      /* border: 5px solid rgb(214, 149, 28);
       border-top-right-radius: 15px;
       border-left: none;
       border-bottom-right-radius: 15px;*/
+  }
+
+  .navbar .content .logo a .fa.fa-reply:hover {
+    transition: scale(1);
   }
 
  
