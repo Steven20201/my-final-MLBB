@@ -11,24 +11,27 @@ $(document).ready(function(){
             $("."+attr).show();
         }
 
-        if(attr == "fighter")  {
+        else if(attr == "fighter")  {
             $("."+attr).show();
         }
 
-        if(attr == "assassin")  {
+        else if(attr == "assassin")  {
             $("."+attr).show();
         }
 
-        if(attr == "mage")  {
+        else if(attr == "mage")  {
             $("."+attr).show();
         }
 
-        if(attr == "marksman")  {
+        else if(attr == "marksman")  {
             $("."+attr).show();
         }
 
-        if(attr == "support")  {
+        else if(attr == "support")  {
             $("."+attr).show();
+        }
+        else {
+            $(".item").show();
         }
     });
 });
