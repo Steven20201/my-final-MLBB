@@ -169,11 +169,11 @@
                   </tr>
                   <tr>
                       <th>Physical Defense</th>
-                      <td>17</td>
+                      <td>25</td>
                   </tr>
                   <tr>
                       <th>Attack Speed</th>
-                      <td>1.08</td>
+                      <td>1.06</td>
                   </tr>
 
                   <tr>
@@ -182,11 +182,11 @@
                   </tr>
                   <tr>
                       <th>Mana</th>
-                      <td>510</td>
+                      <td>0</td>
                   </tr>
                   <tr>
                       <th>Mana Regen</th>
-                      <td>18</td>
+                      <td>0</td>
                   </tr>
                   <tr>
                       <th>Magic Power</th>
@@ -198,7 +198,7 @@
                   </tr>
                   <tr>
                       <th>Movement SPD</th>
-                      <td>250</td>
+                      <td>260</td>
                   </tr>
                 </table>
             </div>
@@ -229,8 +229,8 @@
                         <div class="moon-bless">
                             <div class="skills">
                                 <h2>Bloodthirst</h2>
-                                <div class="buff" style="background:rgb(255, 217, 0)">
-                                    <span style="text-shadow: 1px 1px 2px black;"> Death Immune </span>
+                                <div class="buff" style="background:rgb(72, 255, 0)">
+                                    <span style="text-shadow: 1px 1px 2px black;"> HEAL </span>
                                 
                                 </div>
                                 <div class="passive">
@@ -816,6 +816,10 @@
             </script>
 
         <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
 			function openPage(pageName,elmnt) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -826,6 +830,10 @@
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
+   body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+          
   document.getElementById(pageName).style.display = "block";
  
 }
@@ -835,10 +843,7 @@ document.getElementById("defaultOpen").click();
 </script>
 
     <script>
-        const body = document.querySelector("body");
-        const navbar = document.querySelector(".navbar");
-        const menuBtn = document.querySelector(".menu-btn");
-        const cancelBtn = document.querySelector(".cancel-btn");
+        
         menuBtn.onclick = ()=>{
           navbar.classList.add("show");
           menuBtn.classList.add("hide");

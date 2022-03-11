@@ -116,7 +116,7 @@
                         <div class="chap-1">
                             <h1>Chapter 4 : Crescent Moon</h1>
                             <h4>Task Target: Get 60 Kills with full stacks of [Moon Blessing]</h4>
-                            <p>In the distance, the orcs and demons were going to attack the Moonlit Forest. With the great Moon Goddess still asleep, and the strength of Estes declining, Miya had o choice. She was forced to shoulder the duties of the Priestess of the Moon and lead her people to defend their homeland. She took up her silver bow, and joined her people to fight for her homeland.</p>
+                            <p>In the distance, the orcs and demons were going to attack the Moonlit Forest. With the great Moon Goddess still asleep, and the strength of Estes declining, Miya had no choice. She was forced to shoulder the duties of the Priestess of the Moon and lead her people to defend their homeland. She took up her silver bow, and joined her people to fight for her homeland.</p>
                         </div>
                     </div>
                 </div>
@@ -874,17 +874,25 @@
             </script>
 
         <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
 			function openPage(pageName,elmnt) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            body.classList.remove("disabled");
+                    navbar.classList.remove("show");
+                    menuBtn.classList.remove("hide");
+                    
+            document.getElementById(pageName).style.display = "block";
  
 }
 
@@ -893,10 +901,7 @@ document.getElementById("defaultOpen").click();
 </script>
 
     <script>
-        const body = document.querySelector("body");
-        const navbar = document.querySelector(".navbar");
-        const menuBtn = document.querySelector(".menu-btn");
-        const cancelBtn = document.querySelector(".cancel-btn");
+        
         menuBtn.onclick = ()=>{
           navbar.classList.add("show");
           menuBtn.classList.add("hide");
