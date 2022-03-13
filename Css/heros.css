@@ -254,6 +254,7 @@ body {
   font-size: 55px;
   color: rgb(247, 213, 151);
   font-weight: 700;
+  padding: 20px;
   text-shadow: 0px 0px 20px #f4f0f0, 0px 0px 30px #ee6363, 0px 0px 40px #ac2424, 0px 0px 50px #de0a0a, 0px 0px 60px #620d0d, 0px 0px 70px #3b0606;
 }
 
@@ -317,7 +318,7 @@ margin-top: 20px;
 }
 
 #main .main-top .first-cont .mastery .chap-1 {
-  padding-top: 20px;
+  padding: 20px;
 }
 
 
@@ -813,7 +814,7 @@ table tr:nth-child(even){background-color: #2c92d69a; }
 
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 500px) {
   .tabs-style-iconbox nav ul li {
     width: 22.5%;
   }
@@ -880,6 +881,8 @@ section .miyas {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width:  680px) {
