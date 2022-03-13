@@ -268,14 +268,14 @@ body {
   display: flex;
   justify-content: center;
   border-bottom: 2px solid rgb(243, 181, 10);
-  padding-top: 35rem;
+  padding-top: 30rem;
 }
 .tab {
   padding-bottom: 70px;
   display: flex;
   justify-content: center;
   border-bottom: 2px solid rgb(243, 181, 10);
-  padding-top: 35rem;
+  padding-top: 32.5rem;
 
 }
 .det {
@@ -295,7 +295,7 @@ body {
   display: grid;
   grid-template-columns: 0.75fr 1fr;
   grid-template-rows: auto 1fr;
-  grid-gap: 15px;
+  grid-gap: 15px;padding-top: 20px;
   grid-template-areas: 
   "first-cont about";
 }

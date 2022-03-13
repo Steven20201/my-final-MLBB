@@ -42,10 +42,10 @@
                 <div class="icon cancel-btn">
                     <i class="fa fa-times"></i>
                 </div>
-                <li><a class="tablink" id="defaultOpen" onclick="openPage('main',this)">Heroes</a></li>
-                <li><a  class="tablink" onclick="openPage('main-1',this)">Ability</a></li>
-                <li><a class="tablink" onclick="openPage('main-2',this)">Guide</a></li>
-                <li><a class="tablink" onclick="openPage('main-3',this)">Skin</a></li>
+                <li><a class="tablink" id="defaultOpen" onclick="openPage('main',this,'rgb(243, 215, 164)')">Heroes</a></li>
+                <li><a  class="tablink" onclick="openPage('main-1',this,'rgb(243, 215, 164)')">Ability</a></li>
+                <li><a class="tablink" onclick="openPage('main-2',this,'rgb(243, 215, 164)')">Guide</a></li>
+                <li><a class="tablink" onclick="openPage('main-3',this,'rgb(243, 215, 164)')">Skin</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fa fa-bars"></i>
@@ -55,7 +55,7 @@
         <section id="main" class="tabcontent">
          
                  <div class="icons">
-                  <img src="image/mage_.png" alt="" style=" float: left; padding: 10px; width: 5em;">
+                  <img src="image/mage_.png" alt="" style=" float: left; padding: 10px; width: 7em;">
                 <div class="title-con">Nana</div>
             </div>
           
@@ -267,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="description">
-                                <p>Nana launches a magic boomerang in the designated direction. Each time the boomerang hits an enemy, it deals 220( +110% Total Magic Power) (Magic Damage) and slow enemies by 40% for 1s. The first enemy takes full damage, the next one takes 20% less damage, up to 60% less damage.</p>
+                                <p>Nana launches a magic boomerang in the designated direction. Each time the boomerang hits an enemy, it deals 220<span style="color: rgb(5, 226, 255);">(+110% Total Magic Power)</span> <span style="color:rgb(95, 6, 83)">Magic Damage</span> and slow enemies by 40% for 1s. The first enemy takes full damage, the next one takes 20% less damage, up to 60% less damage.</p>
                             </div>
                             <table class="table">
                                 <tr>
@@ -615,7 +615,7 @@
                                 <iframe src="https://www.youtube.com/embed/5cpVD1egjFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                               </div>
                               <div class="miya">
-                                  <iframe  src="https://www.youtube.com/embed/uvyRAT7CBrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/yuQVDB61N38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                               </div>
                              
                           </div>
@@ -822,7 +822,7 @@
             const navbar = document.querySelector(".navbar");
             const menuBtn = document.querySelector(".menu-btn");
             const cancelBtn = document.querySelector(".cancel-btn");
-			function openPage(pageName,elmnt) {
+			function openPage(pageName,elmnt,color) {
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
                 for (i = 0; i < tabcontent.length; i++) {
@@ -830,14 +830,14 @@
                 }
                 tablinks = document.getElementsByClassName("tablink");
                 for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].style.backgroundColor = "";
+                    tablinks[i].style.color = "";
                 }
                 body.classList.remove("disabled");
                         navbar.classList.remove("show");
                         menuBtn.classList.remove("hide");
                         
                 document.getElementById(pageName).style.display = "block";
-                
+                elmnt.style.color = color;
                 }
 
 // Get the element with id="defaultOpen" and click on it
