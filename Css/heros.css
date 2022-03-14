@@ -772,7 +772,9 @@ table tr:nth-child(even){background-color: #2c92d69a; }
 }
 .emb .mark-emb img {
   width: 350px;
+  height: 320px;
 }
+
 
 .spell .it {
   padding: 20px;
