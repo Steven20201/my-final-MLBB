@@ -300,7 +300,7 @@ body {
 }
 
 .logo a .character {
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 10px;
   padding: 10px;
   font-size: 2rem;
@@ -361,7 +361,7 @@ body {
   grid-gap: 15px;padding-top: 20px;
   grid-template-areas: 
   "first-cont about";
-  background-image: radial-gradient(ellipse closest-side at 50% 20%,#1b2528,#0a0a0c);
+ 
 }
 
 .main-top .first-cont {

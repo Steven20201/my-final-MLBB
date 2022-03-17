@@ -699,9 +699,17 @@ margin-bottom: 15px;
   color: wheat;
 }
 
+.word {
+  box-shadow: inset 2px 13px 100px 20px black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
 #wrapper .wrap-word {
   padding: 15em 100px 10em 100px;
-  color: #f38d0d;
+  color: #ffffff;
+  box-shadow: inset 1px 1px 20px black;
 }
 
 #wrapper .wrap-word h2{
@@ -750,7 +758,7 @@ margin-bottom: 15px;
 	min-width: 80px;
   font-size: 20px;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 10px;
   text-shadow: 2px 1px #002fff;
 	cursor: pointer;
   font-weight: 800;
