@@ -788,25 +788,30 @@ margin-bottom: 15px;
   
   width: 245px;
   height: 420px;
-  border-radius: 10px;
+  
 }
 
 .wrapper .item_grp .item a .card-1:hover img{
   transform: scale(1.2);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
+  border-left: 2px solid rgb(209, 152, 8);
+  border-right: 2px solid rgb(209, 152, 8);
+  border-top:2px solid rgb(209, 152, 8);
 }
 
 .wrapper .item_grp .item a .card-1:hover .overlay{
   transform: scale(1.2);
-  padding: 17px;
-  transition: all 0.5s ease;
- 
+  
+  transition: all 0.3s ease;
+  border-left: 2px solid rgb(209, 152, 8);
+  border-right: 2px solid rgb(209, 152, 8);
+  border-bottom: 2px solid rgb(209, 152, 8);
   position: relative;
 }
 
 .wrapper .item_grp .item a .card-1 .overlay {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   background: linear-gradient(0deg, #080088,#050052, transparent);
   color: wheat;
   text-shadow: 2px 1px #f67c00;
@@ -814,8 +819,7 @@ margin-bottom: 15px;
   padding: 10px;
   border-bottom: 1px solid #000;
   width: 100%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+
   font-weight: 600;
   opacity: 1;
   text-align: center;

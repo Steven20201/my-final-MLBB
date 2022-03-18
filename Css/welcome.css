@@ -339,6 +339,7 @@ nav.navbar .content .logo a img.ML {
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
+  text-shadow: 3px 1px #eb7e09, 3px 1px 20px #e74412, 3px 1px 30px #fd4b04;
   padding: 20px;
   text-decoration: none;
   transition: all 0.3s ease;

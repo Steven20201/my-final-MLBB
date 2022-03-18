@@ -12,16 +12,25 @@
     
     <script src="js/modernizr.custom.js"></script>
     <style>
-        
-    #main, #main-1, #main-2, #main-3{
-    background-image: url(./image/Moonlight\ Archer\ Miya.png);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: -1;
+    @media screen and (min-width: 1000px) {
+        #main, #main-1, #main-2, #main-3{
+   
+ 
+   
+    background-position: center !important;
     
     }
+    }
+    #main, #main-1, #main-2, #main-3 {
+      background-position: -198px;
+      height: 101vh; 
+      background-image: url(./image/Moonlight\ Archer\ Miya.png);
+        background-size: cover;
+        background-attachment: fixed;
+    z-index: -1;
+    max-width: 100%;
+    }
+    
     </style>
 </head>
 <body>

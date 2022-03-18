@@ -13,15 +13,27 @@
     <script src="js/modernizr.custom.js"></script>
 
     <style>
-        #main, #main-1, #main-2, #main-3{
-  background-image: url(./image/Alucard\ MLBB.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: -1;
-}
+    
 
+@media screen and (min-width: 500px) {
+        #main, #main-1, #main-2, #main-3{
+   
+ 
+   
+    background-position: center !important;
+    
+    }
+    }
+    #main, #main-1, #main-2, #main-3 {
+      background-position: -391px;
+      height: 101vh; 
+     
+       background-image: url(./image/Alucard\ MLBB.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    z-index: -1;
+    max-width: 100%;
+    }
 .chap-1 p a:hover {
     text-shadow: 1px 1px 3px rgb(0, 0, 0), 1px 1px 6px rgb(2, 198, 247), 1px 1px 20px rgb(2, 247, 96);
 }
@@ -41,7 +53,7 @@
         <div class="content">
             <div class="logo">
                 <a href="character.html">
-                   <i class="fa fa-reply"></i>
+                    <div class="character">Characters</div>
                 </a>
             </div>
             <ul class="menu-list">
@@ -54,7 +66,7 @@
                 <li><a class="tablink" onclick="openPage('main-3',this,'rgb(243, 215, 164)')">Skin</a></li>
             </ul>
             <div class="icon menu-btn">
-                <div class="character">Characters</div>
+                <i class="fa fa-bars"></i>
             </div>
         </div>
     </nav>

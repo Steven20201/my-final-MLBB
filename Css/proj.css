@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+nav.navbar .content .logo a img.ML {
+  width: 150px;
+  padding: 10px 20px;
+}
+
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0px 30px;
+}
+
+.navbar{
+  position: fixed;
+  margin: 0 auto;
+  z-index: 5;
+  width: 100%;
+  padding: 25px 0;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.navbar.sticky{
+  padding: 10px 0;
+  background: #1b1b1b;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .menu-list{
+  display: inline-flex;
+}
+
+.menu-list li{
+  list-style: none;
+}
+.menu-list li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-left: 25px;
+  padding: 20px;
+  text-decoration: none;
+  text-shadow: 3px 1px #eb7e09, 3px 1px 20px #e74412, 3px 1px 30px #fd4b04;
+  transition: all 0.3s ease-out;
+}
+
+.content ul.menu-list li label {
+  display: none;
+}
+
+
+.menu-list li a:hover, 
+.menu-list li label:hover{
+  color: #ffd106;
+  text-shadow: 0 0 20px #fff, 0 0 30px #0025f5, 0 0 40px #fa6400, 0 0 50px #f70808, 0 0 60px #ff7b00, 0 0 70px #ff5100, 0 0 80px #ff0000;
+}
+
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+.icon.cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.navbar.sticky .icon.cancel-btn{
+  top: 10px;
+}
+
+.navbar .content ul.menu-list li input[type="checkbox"]{
+  display: none;
+}
+
+.content ul.menu-list ul{
+  position: absolute;
+  background: #171c24;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content ul.menu-list li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease;
+}
+
+
+.content ul.menu-list ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+
+.content ul.menu-list ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+
+.content .ul.menu-list ul li{
+  position: relative;
+}
+
+.content ul.menu-list ul li:hover ul{
+  top: 0;
+}
+
+.fadeInTop{
+  -webkit-animation: fadeInTop 1.1s both;
+  -o-animation: fadeInTop 1.1s botj;
+   -moz-animation: fadeInTop 1.1s both;
+   animation: fadeInTop 1.1s both;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 868px) {
+    .content ul.menu-list li a.desktop-link {
+      display: none;
+  }
+  
+  .content ul.menu-list.active li #show-items:checked ~ ul {
+    max-height: 100vh;
+  }
+  
+  .content ul.menu-list li label {
+    line-height: 40px;
+      font-size: 20px;
+      display: block;
+      padding: 8px 18px;
+      cursor: pointer;
+  }
+  
+    body.disabledScroll{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+      height: 47px;
+      width: 50px;
+      text-align: center;
+      border-radius: 50%;
+      z-index: 9;
+    }
+    .icon.cancel-btn{
+      display: none;
+    }
+    .icon.cancel-btn.show{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background: #222;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+      transition: all 0.3s ease;
+    }
+    .navbar.sticky .menu-list{
+      clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+    }
+    .navbar .menu-list.active{
+      clip-path: circle(75%);
+    }
+    .navbar .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+      font-size: 23px;
+    }
+    
+    .content ul.menu-list ul,
+    .content ul.menu-list ul ul{
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      background: none;
+      max-height: 0px;
+      overflow: hidden;
+    }
+  
+  
+  }
+  
