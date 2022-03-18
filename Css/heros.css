@@ -79,11 +79,11 @@ body {
   {
     text-shadow: 
     
-     0 1px 5px rgba(0, 0,0, .05),
-    0 5px 5px rgba(0, 0,0, .10),
-    0 10px 10px rgba(0, 0,0, .15),
-    0 15px 10px rgba(0, 0,0, .20),
-    0 20px 15px rgba(0, 0,0, .25)
+     0 1px 5px rgba(253, 252, 252, 0.05),
+    0 5px 5px rgba(219, 219, 219, 0.1),
+    0 10px 10px rgba(216, 213, 213, 0.15),
+    0 15px 10px rgba(238, 226, 226, 0.2),
+    0 20px 15px rgba(247, 247, 247, 0.25)
     ;;
     transform: translate(-1%,-1%);
     color: #007bff;

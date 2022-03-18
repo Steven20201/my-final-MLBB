@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends: Bang Bang</title>
+    <link rel="shortcut icon" href="image/applogo.png" type="images/x-icon">
+    <link rel="stylesheet" href="flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Css/heros.css">
+    
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+        
+    #main, #main-1, #main-2, #main-3{
+    background-image: url(./image/Layla\ MLBB.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    
+    }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="character.html">
+                  <div class="character">Characters</div>
+                </a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fa fa-times"></i>
+                </div>
+                <li><a class="tablink" id="defaultOpen" onclick="openPage('main',this,'rgb(243, 215, 164)')">Heroes</a></li>
+                <li><a  class="tablink" onclick="openPage('main-1',this,'rgb(243, 215, 164)')">Ability</a></li>
+                <li><a class="tablink" onclick="openPage('main-2',this,'rgb(243, 215, 164)')">Guide</a></li>
+                <li><a class="tablink" onclick="openPage('main-3',this,'rgb(243, 215, 164)')">Skin</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+        <section id="main" class="tabcontent">
+         
+                 <div class="icons">
+                  <img src="image/marksman.png" alt="" style=" float: left; padding: 10px; width: 8em;">
+                <div class="title-con">Layla</div>
+            </div>
+          
+                     <div class="det">
+                        <p>(Marksman)</p>
+                            <p>Reap/Damage</p>
+                    </div>
+            <div class="main-top">
+                <div class="first-cont">
+                        
+                
+                    <div class="details">
+                    
+                        <div class="ratio">
+                            <div class="main-perc">
+                                <label>Durability</label>
+                                
+                                <div class="meter orange">
+                                    <span style="width: 15%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                <label>Offense</label>
+                                    
+                                <div class="meter yellow">
+                                    <span style="width: 95%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                <label>Skill Effects</label>
+                                
+                                <div class="meter blue">
+                                    <span style="width: 75%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                    <label>Difficulty</label>
+                                    
+                                    <div class="meter green">
+                                        <span style="width: 8%"></span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mastery">
+                        <h2>Mastery Code</h2>
+                        <div class="chap-1">
+                            <h1>Chapter 1 : Innocent Girl</h1>
+                            <h4>Task Target: Win 2 matches with Marksman/Physical Emblems.</h4>
+                            <p>As the most outstanding scientists in Eruditio, Layla's parents had always hoped that she would become inventors like them. However, Layla had no interest in science. Brought up by her grandfather, young Layla would often practice various fighting techniques and find ways to hone her reasoning and investigating skills. As she grew older, her desire to explore the world beyond her homeland became so strong. Layla disliked her father's warning that the world outside was lawless and filled with danger. She ignored him completely, convinced that she should go for an adventure and change the world.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 2 : The Big World</h1>
+                            <h4>Task Target: Deal a total of 80000 damage.</h4>
+                            <p>The misunderstanding between Layla and her father became larger. She didn't know that her birthday gift, a Malefic Gun, was built by her father. And this gift caused Layla to yearn for adventure even more. On her sixteenth birthday, Layla stealthily grabbed her Malefic Gun and slipped out of Erudito under the cover of darkness to venture into a big, wide world.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 3 : A Big Crisis</h1>
+                            <h4>Task Target: Use "Malefic Bomb" at least 10 times with a hit rate higher than 50% in a single match. Complete it 3 times.</h4>
+                            <p>She eventually reached a remote city-state in the southwest of the Moniyan Empire, where many children had mysteriously gone missing. After investigating the region and following the trail of clues, Layla found the gang of criminals who had been kidnapping the city's children, and followed them all the way to their headquarters, determined to put an end to their wicked deeds and rescue the poor children. Eventually, the kidnapped children were saved, but Layla fell into their hands.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 4 : Restart the Adventure</h1>
+                            <h4>Task Target: Use Destruction Rush and accumulate 12 kills of enemies.</h4>
+                            <p>Finally Layla realised that these were no ordinary kidnappers, but evil scientists from Laboratory 1718. They recognized the Malefic Gun she wielded, and thus they decided to kidnap Layla. After being released and returning to Erudito, Layla finally knew that her father was forced to serve Laboratory 1718 in order to save his beloved daghter. Now she understood what her father had done and had said to her. Layla set off on her quest to save her father. This time she was stronger that before.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="about" style="color: rgb(231, 196, 130);">
+            <div class="content">
+                
+              <div class="title">Story</div>
+              <div class="story-details">
+                  <p>In Eruditio, the world's forefront of science and technological advancement, one can find countless brilliant inventors. Layla was born into a family such inventors. But because of the time-consuming nature of their work, Layla's parents had no time to devote to their daughter. As a result, she was raised primarily by her elderly grandfather.</p>
+                <p>As the most outstanding scientists in Eruditio, Layla's parents had always hoped that she would continue to expand her knowledge of science and become inventors like them, leading the vanguard in making new and amazing scientific and technological breakthroughs. However, Layla had no interest in science. She didn't get along with her parents at all, especially not with her father, and developed a personality and interests quite different from theirs. Instead of setting her heart on the mysteries of science, she looked up to her grandfather, a former member of the Eruditio City Guard, and cultivated an adventurous spirit and irrepressible sense of justice under his stewardship.</p>
+                <p>Under her grandfather's guidance, young Layla would often practice various fighting techniques and find ways to hone her reasoning and investigation skills. As she grew older, her thirst for knowledge grew too, and soon her desire to explore the world beyond her homeland became so strong, she could no longer contain it. In Layla's mind, the technology of Eruditio should not only benefit the city and its people, but should be used to change the world.</p>
+                <p>However, Layla's father warned her that the world outside Eruditio was lawless and filled with danger, and that young Layla needed to mature a little more before even thinking of embarking any kind of adventure. But Layla's resentment and frustration toward her neglectful father resulted in this warning falling on deaf ears. She ignored him completely, convinced that this lack of support was his way of avoiding his responsibility as a father.</p>
+                <p>In fact, the truth of the matter was that Layla's father loved her more than anything in the world, and he used the most advanced Leviathan technology of Eruditio to build a Malefic Gun for her. However, fearing that Layla would refuse any gift he tried to give her, Layla's father gave the Malefic Gun to Layla's grandfather, who then handed it to Layla as a gift from him. But what Layla's father hadn't anticipated was that this gift would only cause Layla to yearn for adventure even more.</p>
+                <p>On her sixteenth birthday, Layla stealthily grabbed her Malefic Gun and slipped out of Eruditio under the cover of darkness to venture into a big, wide world.</p>
+                <p>She eventually reached a remote city-state in the southwest of the Moniyan Empire, where many children had mysteriously gone missing. Now, she finally had a chance to try out the fighting and tracking skills she had learned from her grandfather. After investigating the region and following the trail of clues, Layla found the gang of criminals who had been kidnapping the city's children, and followed them all the way to their headquarters, determined to put an end to their wicked deeds and rescue the poor children.</p>
+                <p>But what Layla didn't know, was that these were no ordinary kidnappers, but evil scientists from Laboratory 1718, who were kidnapping innocent young children for use in their horrible human experiments. Enraged at the thought of the kidnapped children's suffering, Layla picked up her Malefic Gun and broke into the holding area.</p>
+                <p>The difficulty and danger of the ensuing battle far exceeded anything Layla could ever have imagined. In the heat of battle, the Laboratory 1718 operatives recognized the Leviathan technology in Layla's hands, and thus they decided to change the purpose of their operation... Eventually, the kidnapped children were saved, but Layla fell into the hands of the evil scientists, who took away her Malefic Gun. Layla was imprisoned in a dark dungeon, and just when she had lost all hope, she was suddenly released and returned to Eruditio.</p>
+                <p>But when she returned to Eruditio, an even bigger shock awaited her: Her father had defected from the Scholars' Union and had become a member of the evil Laboratory 1718. All at once, a storm of reproach and responsibility fell upon her. Despite the fact that she never got along with her father, Layla couldn't believe that her calm and rational father would become a member of the fanatical Laboratory 1718.</p>
+                <p>Layla fell into a mire of confusion, and all she could do to maintain her sanity was focus on training and keep learning constantly in an attempt to forget the reality of the situation she had found herself in. As time went by, Layla grew in maturity, and her old grandfather came to the end of his life.</p>
+                <p>On his deathbed, Layla's grandfather told her that she had been abducted by Laboratory 1718 because they had recognized the Malefic Gun she wielded, which her father had made for her. After Layla was kidnapped by Laboratory 1718, her father had no choice but to take her place in order to save his beloved daughter. He was taken abroad and forced to serve Laboratory 1718.</p>
+                <p>Before turning himself over, he made the rest of the family promise to never tell Layla the truth, so that she could grow up without having to bear the burden of guilt for his fate. Layla finally understood the motivation behind everything her father had every done and had said to her, and the true depth of his love.</p>
+                <p>She understood... and she became stronger. Under the light of the setting sun, Layla picked up the Leviathan rifle prototype her father had left behind and set off on her quest to find Laboratory 1718.</p>
+              </div>
+              <div class="skill-details">
+                  <div class="table-heading">
+                      Attributes
+                  </div>
+                  <table>
+                    <tr>
+                        <th>HP</th>
+                        <td>2500</td>
+                    </tr>
+                    <tr>
+                        <th>HP Regen</th>
+                        <td>5.4</td>
+                    </tr>
+                    <tr>
+                        <th>Physical ATK</th>
+                        <td>125</td>
+                    </tr>
+                    <tr>
+                        <th>Physical Defense</th>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th>Attack Speed</th>
+                        <td>1.06</td>
+                    </tr>
+
+                    <tr>
+                        <th>Attack Speed</th>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <th>Mana</th>
+                        <td>424</td>
+                    </tr>
+                    <tr>
+                        <th>Mana Regen</th>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <th>Magic Power</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Magic Defense</th>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th>Movement SPD</th>
+                        <td>240</td>
+                    </tr>
+                  </table>
+              </div>
+            
+            </div>
+          </div>
+            </div>
+        
+           
+          
+        </section>
+        
+        <section id="main-1" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Skills</div>
+            </div>
+            <div class="tabs tabs-style-iconbox" style="color: bisque;">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home"><img src="image/Malefic Gun.png" alt="">Malefic Gun</a></li>
+                        <li><a href="#section-iconbox-2" class="icon icon-gift"><img src="image/Malefic Bomb.png" alt="">Malefic Bomb</a></li>
+                        <li><a href="#section-iconbox-3" class="icon icon-upload"><img src="image/Void Projectile.png" alt="">Void Projectile</a></li>
+                        <li><a href="#section-iconbox-4" class="icon icon-coffee"><img src="image/Destruction Rush.png" alt="">Destruction Rush</a></li>
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Malefic Gun</h2>
+                                <div class="buff">
+                                    <span> BUFF </span>
+                                
+                                </div>
+                                <div class="passive" >
+                                    <span>Passive</span>
+                                    <br><i>Target locked. Fire!</i>
+                                </div>
+                            </div>
+                            <div class="description" style="border-bottom: 0;" >
+                                <p>Layla's Basic Attack and skill damage increases with the distance between her and enemies from 100% to 140% (reaches a maximum at 6 yards).</p>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </section>
+                    <section id="section-iconbox-2">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Malefic Bomb</h2>
+                                <div class="two-buff"> 
+                                     <div class="Aov">
+                                        <span> Burst </span>
+                                    </div>
+                                     <div class="buff">
+                                        <span> BUFF </span>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 6.0  Mana Cost: 40  Type: Physical ATK</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Layla fires a Malefic Energy Bomb forward, dealing 200 <span style="color: rgb(238, 129, 4)">(+80%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> to the first enemy it hits. (This damage can be critical.) Upon hitting an enemy, Layla's Basic Attack range will be increased for 3s, and her Movement Speed will be increased by 60% which decays within the next 1.2s. (Upon hitting an enemy hero, the duration of Movement Speed gain will be doubled.)</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                    <th>Lv.4</th>
+                                    <th>Lv.5</th>
+                                    <th>Lv.6</th>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>40</td>
+                                    <td>45</td>
+                                    <td>50</td>
+                                    <td>55</td>
+                                    <td>60</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Base Damage</td>
+                                    <td>200</td>
+                                    <td>240</td>
+                                    <td>280</td>
+                                    <td>320</td>
+                                    <td>360</td>
+                                    <td>400</td>
+                                </tr>
+                              
+                            </table>
+                        </div>
+                        
+                    </section>
+
+                    <section id="section-iconbox-3">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Void Projectile</h2>
+                                <div class="two-buff">
+                                     <div class="Aov">
+                                        <span> AoE </span>
+                                    </div>
+                                     <div class="CC">
+                                        <span> Slowed </span>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 7.5  Mana Cost: 65  Type: Physical Skill</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Layla fires an energy ball that explodes, dealing 170 <span style="color: rgb(238, 129, 4)">(+65%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> to the target and enemies within a certain range, slowing them by 30% for 1.2s. She applies <span style="color: rgb(128, 83, 231);">Magic Marks</span> to the enemies hit. While Layla hits an enemy with a <span style="color: rgb(128, 83, 231);">Magic Mark</span>, she deals 100 <span style="color: rgb(238, 129, 4)">(+35%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> to nearby enemies and slows them by 30% for 1.2s.</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                    <th>Lv.4</th>
+                                    <th>Lv.5</th>
+                                    <th>Lv.6</th>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Cooldown</td>
+                                    <td>7.5</td>
+                                    <td>7.3</td>
+                                    <td>7.1</td>
+                                    <td>6.9</td>
+                                    <td>6.7</td>
+                                    <td>6.5</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>65</td>
+                                    <td>70</td>
+                                    <td>75</td>
+                                    <td>80</td>
+                                    <td>85</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Base Damage</td>
+                                    <td>170</td>
+                                    <td>200</td>
+                                    <td>230</td>
+                                    <td>260</td>
+                                    <td>290</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Extra Damage</td>
+                                    <td>100</td>
+                                    <td>120</td>
+                                    <td>140</td>
+                                    <td>160</td>
+                                    <td>180</td>
+                                    <td>200</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </section>
+                    <section id="section-iconbox-4">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Destruction Rush</h2>
+                                <div class="two-buff"> 
+                                    <div class="Aov">
+                                        <span> Burst </span>
+                                    </div>
+                                     <div class="buff">
+                                        <span> BUFF </span>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 37.0  Mana Cost: 130  Type: Physical Skill</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p><span style="color: rgb(128, 83, 231);">Passive</span>: Increases the range of <span style="color: rgb(128, 83, 231);">Void Projectile</span> and Basic Attack by 0.6 yard(s). Slightly increases Layla's sight range upon each skill level-up. </p>
+                                <p><span style="color: rgb(128, 83, 231);">Active</span>: Layla fires an energy blast, dealing 500 <span style="color: rgb(238, 129, 4)">(+150%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> to enemies on the path.</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Cooldown</td>
+                                    <td>37.0</td>
+                                    <td>32.0</td>
+                                    <td>27.0</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>130</td>
+                                    <td>150</td>
+                                    <td>170</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Range Increase</td>
+                                    <td>0.6</td>
+                                    <td>1.2</td>
+                                    <td>1.8</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Base Damage</td>
+                                    <td>500</td>
+                                    <td>650</td>
+                                    <td>800</td>
+                                
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+          
+        </section>
+       
+
+
+        <section id="main-2" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Layla Guide</div>
+            </div>
+            
+
+            <div class="tabs tabs-style-iconbox" style="color: rgb(255, 153, 0);">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home">Item Set</span></a></li>
+                        <li><a href="#section-iconbox-2" class="icon icon-gift">Best Emblem</span></a></li>
+                        <li><a href="#section-iconbox-3" class="icon icon-gift">Media</span></a></li>
+                        <li><a href="#section-iconbox-4" class="icon icon-gift">Counters</span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <h3 style="text-align: left; padding: 20px 0;">Default Builds</h3>
+                        
+                        <div class="att">
+                            <h3>Attack Speed</h3>
+                            <div class="atkitem">
+                                <div class="eqi">
+
+                                    <img src="image/Berserker_s_Fury-removebg-preview.png" alt="Berserker's Fury">
+                                    <span>Berserker's Fury</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Swift_Boots.png" alt="Swift Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Windtalker.png" alt="Windtalker">
+                                    <span>Windtalker</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Scarlet_Phantom.png" alt="Scarlet_Phantom">
+                                    <span>Scarlet Phantom</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Haas's Claws.png" alt="Haas's Claws">
+                                    <span>Haas's Claws</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/rose-gold-meteor.png" alt="rose-gold-meteor">
+                                    <span>Rose Gold Meteor</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="att">
+                            <h3>Anti Heal</h3>
+                            <div class="atkitem">
+                                <div class="eqi">
+
+                                    <img src="image/Swift_Boots.png" alt="Swift_Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Windtalker.png" alt="Windtalker">
+                                    <span>Windtalker</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Scarlet_Phantom.png" alt="Scarlet_Phantom">
+                                    <span>Scarlet Phantom</span>
+                                </div> 
+                                <div class="eqi">
+
+                                    <img src="image/Berserker_s_Fury-removebg-preview.png" alt="Berserker's Fury">
+                                    <span>Berserker's Fury</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Haas's Claws.png" alt="Haas's Claws">
+                                    <span>Haas's Claws</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Blade of Despire.png" alt="Blade of Despire">
+                                    <span>Blade of Despair</span>
+                                </div>
+                                
+                               
+                            </div>
+
+                        </div>
+
+                        <div class="att">
+                            <h3>Hot Gear</h3>
+                            <div class="atkitem">
+                                
+                                <div class="eqi">
+                                    <img src="image/Demon_Hunter_Sword.png" alt="Demon_Hunter_Sword">
+                                    <span>Demon Hunter Sword</span>
+                                </div>
+                                <div class="eqi">
+
+                                    <img src="image/Swift_Boots.png" alt="Swift_Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Berserker_s_Fury-removebg-preview.png" alt="Berserker_s_Fury">
+                                    <span>Berserker's Fury</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Scarlet_Phantom.png" alt="Scarlet_Phantom">
+                                    <span>Scarlet Phantom</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Malefic_Roar.png" alt="Malefic_Roar">
+                                    <span>Malefic Roar</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Blade of Despire.png" alt="Blade of Despire">
+                                    <span>Blade of Despair</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                     
+                    </section>
+
+
+
+
+                    <section id="section-iconbox-2">
+                     <div class="emb">
+                         <div class="mark-emb">
+                             <h3>Layla Custom Marksman Set</h3>
+                             <img src="image/layla marksman emblem.png" alt="">
+                         </div>
+                         <div class="mark-emb">
+                            <h3>Layla Custom Assassin Set</h3>
+                            <img src="image/layla assassin emblem.png" alt="">
+                        </div>
+                        
+                     </div>
+                     <div class="spell">
+                           <h3>Best Spell for Layla</h3>
+                           <div class="spell-item">
+                                <div class="it">
+                             
+                           <img src="image/flicker.png" alt="Flicker">
+                           <span>Flicker</span>
+                           </div>
+                           <div class="it">
+                               
+                           <img src="image/inspore.png" alt="Inspire">
+                           <span>Inspire</span>
+                           </div>
+                           </div>
+                          
+                           
+
+                       </div>
+                        
+                    </section>
+
+
+                    
+                    <section id="section-iconbox-3">
+                      <div class="media">
+                          Some Tutorials for Layla Gameplay
+                      </div>
+                        <div class="video">
+                            <div class="miya">
+                                <iframe src="https://www.youtube.com/embed/EUrh1_0pFrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="miya">
+                                <iframe src="https://www.youtube.com/embed/ZOPw5gN35ZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="miya">
+                                <iframe  src="https://www.youtube.com/embed/1yT1bSUj8jA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="miya">
+                                <iframe src="https://www.youtube.com/embed/ZJKkfsogcEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                           
+                        </div>
+                    </section>
+
+
+                   <section id="section-iconbox-4">
+                      <div class="counter">
+                          <div class="counter-name">Best Teammates</div>
+                          <div class="body-name">
+                              <img src="image/franco.png" alt="Franco">
+                              <div class="lol">
+                                  <p><span style="font-weight: 700 !important;">Franco:</span> Franco should be the one hooking through their foes, pushing their foes into them while the Layla will try to attack it.</p>
+                              </div>
+                          </div>
+                      </div>
+                        
+
+                      <div class="counter">
+                        <div class="counter-name">Counters</div>
+                        <div class="body-name">
+                            <img src="image/eudora.png" alt="Eudora">
+                            <div class="lol">
+                                <p><span style="font-weight: 700 !important;">Eudora:</span> Eudora can deal massive damages against the Marksman, especially to Layla.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="counter">
+                        <div class="counter-name">Countered by</div>
+                        <div class="body-name">
+                            <img src="image/chou.png" alt="Chou">
+                            <div class="lol">
+                                <p><span style="font-weight: 700 !important;">Chou:</span> With Layla's Malefic Gun and her Void Projectile, she can easily slow down Chou and track him down. Layla is like a hunter whenever she wants to hunt Chou down.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+        </section>
+
+        <section id="main-3" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Skins and Sacred Statue</div>
+            </div>
+
+            <div class="tabs tabs-style-iconbox" style="color: bisque;">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home">Skins</span></a></li>
+                        <li><a href="#section-iconbox-2" class="icon icon-gift">Scared Statue</span></a></li>
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <div class="miyas"> 
+                            <div class="card">
+                                <img src="image/Malefic_Gunner.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Malefic Gunner</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Energy_Gunner.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Energy Gunner</h4>
+                                <span style="font-size: 13px; ">Revamped Version</span>
+                                </div>
+                            </div>  
+                            <div class="card">
+                                <img src="image/Green Flush Skin.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Green Flush</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Green Flush.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Green Flash</h4>
+                                <span style="font-size: 13px; ">Revamped Version</span>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <img src="image/Bunny Babe layla.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Bunny Babe</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Bunny Baby.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Bunny Babe</h4>
+                                <span style="font-size: 13px; ">1st Remodel</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Malefic Gunner.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Malefic Gunner</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                           
+                          
+                           
+                            <div class="card">
+                                <img src="image/Cannons and Roses.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Cannons and Roses</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Cannon_and_Roses.webp" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Cannons and Roses</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Blue Spectre.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Blue Spectre</h4>
+                                <span style="font-size: 13px; ">1st Remodel</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Classic.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Classic Malefic Gunner</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/S.A.B.E.R._Breacher.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>S.A.B.E.R._Breacher</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Blazing Gun.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Blazing Gun</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/layla-miss-hikari-aspirants-skin-wallpaper-hd-mobile-legends-novazenn.jpg" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Miss Hikari</h4>
+                                <span style="font-size: 13px; ">Original Version</span>
+                                </div>
+                            </div>
+                         
+                        </div>
+                       
+                        
+                    </section>
+                    <section id="section-iconbox-2">
+                       <div class="scared-status">
+                           <a href="image/Layla scared.jpg " target="_blank" style="text-decoration: none;">
+                           <div class="card">
+                               <img src="image/Heart of Hikari.jpg" alt="Moonlight Arrow">
+                               <div class="cota">
+                                Heart of Hikari
+                               </div>
+                            
+                           </div>
+                        </a>
+                           <div class="abouut">
+                               <p>Scared status can only be summoned in Classic/Ranked/Custom(5v5)</p>
+                           <p>Summon Cooldown: 5min</p>
+                           <p>Star-Raising Points Bonus +5</p>
+                           </div>
+                           
+                       </div>
+                    </section>
+
+                    
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/cbpFWTabs.js"></script>
+            <script>
+                (function() {
+                    [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+                        new CBPFWTabs( el );
+                    });
+    
+                })();
+            </script>
+
+        <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+			function openPage(pageName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.color = "";
+            }
+            body.classList.remove("disabled");
+                    navbar.classList.remove("show");
+                    menuBtn.classList.remove("hide");
+                    
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.color = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+    <script>
+        
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+</body>
+</html>
