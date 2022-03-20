@@ -64,10 +64,13 @@
             </div>
         </div>
     </nav> 
-    <button onclick="topFunc()" id="myBtn" title = "Go to top">
-        <i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    <div>
+         <button onclick="topFunc()" id="myBtn" title = "Go to top">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    </div>
   
    <section id="wrapper">
+      
         <div class="wrap-word fadeInTop">
             <div class="word">
                 <h2>Types of Mobile Lengends Heroes</h2>
@@ -1291,13 +1294,16 @@
                 </div> 
          
         </div>
+       
 </section>
+
     <script>
         const body = document.querySelector("body");
     const navbar = document.querySelector(".navbar");
     const menu = document.querySelector(".menu-list");
     const menuBtn = document.querySelector(".menu-btn");
     const cancelBtn = document.querySelector(".cancel-btn");
+    var mybutton = document.getElementById("myBtn");
     menuBtn.onclick=()=> {
         menu.classList.add("active");
         menuBtn.classList.add("hide");
@@ -1314,7 +1320,26 @@
 
     window.onscroll = ()=>{
       this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
     }
+    }
+    function topFunc() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+}
+    </script>
+    <script>
+        
+  
+
+
+
+    
+   
+
     </script>
     <script src="js/script.js"></script>
 
@@ -1322,6 +1347,7 @@
   <script type="text/javascript">
       $(document).ready(function(){$(window).width()<840&&$(".item"),$("item").each(function(i){var s=$(this).offset().top;$(window).scrollTop()+$(window).height()>s&&$(this).removeClass("item")}),$(window).scroll(function(){$(".item").each(function(i){var s=$(this).offset().top+$(this).outerHeight()/3;$(window).scrollTop()+$(window).height()>s&&$(this).addClass("item-visible")})})});
   </script>
-  <script src="js/scrollup.js"></script>
+  
+
 </body>
 </html>
