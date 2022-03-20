@@ -542,7 +542,7 @@ margin-bottom: 15px;
 
 @media screen and (max-width: 560px) {
   .footer {
-    height:1060px !important;
+    height:1100px !important;
   }
 }
 
@@ -666,6 +666,25 @@ margin-bottom: 15px;
 
 
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: linear-gradient(106deg, #0920f1, #0920f1,transparent, transparent);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(226, 64, 191);
+}
 
 
 

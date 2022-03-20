@@ -378,7 +378,7 @@ body {
 #main .main-top .first-cont .mastery h2 {
   color: rgb(231, 196, 130);
   text-align: center;
-  text-shadow:2px 2px 20px #e8ddb4, 2px 2px 30px #fcde70, 2px 2px 40px #f2d052, 2px 2px 50px #f4c412;
+  text-shadow: 0px 0px 20px #04d0c6, 2px 2px 0px #9819de, 0px 0px 40px #e0dd10;
   padding: 20px;
 margin-top: 20px;
 }
@@ -1031,4 +1031,28 @@ section .miyas {
      width: 100%;
   }
    
+ }
+
+ @media screen and (max-width:1000px) {
+  .logo a .character {
+      font-size: 1.5rem;
+  }
+ }
+
+ @media screen and (max-width:940px) {
+  .logo a .character {
+      font-size: 1rem;
+  }
+ }
+
+ @media screen and (max-width:868px) {
+  .logo a .character {
+      font-size: 1.7rem;
+  }
+ }
+
+ @media screen and (max-width:420px) {
+  .logo a .character {
+      font-size: 1.2rem;
+  }
  }
