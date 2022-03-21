@@ -71,11 +71,11 @@ nav.navbar .content .logo a img.ML {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.menu-list li a {
+.menu-list li a,.menu-list li label {
   color: #fff;
   font-size: 1.3em;
   font-weight: 600;
-  margin-left: 25px;
+  
   padding: 20px;
   text-decoration: none;
   text-shadow: 3px 1px #eb7e09, 3px 1px 20px #e74412, 3px 1px 30px #fd4b04;
@@ -120,10 +120,14 @@ nav.navbar .content .logo a img.ML {
   background: #171c24;
   top: 80px;
   z-index: -1;
+  margin: 15px 20px;
   opacity: 0;
   visibility: hidden;
 }
 
+.content ul.menu-list ul li {
+  padding: 5px 10px; 
+}
 .content ul.menu-list li:hover > ul {
   top: 70px;
   opacity: 1;
@@ -573,7 +577,13 @@ margin-bottom: 15px;
   .content ul.menu-list li a.desktop-link {
     display: none;
 }
+.content #show-features:checked ~ ul {
+  max-height: 100vh;
+}
 
+.content ul.menu-list a.desktop-link {
+  display: none;
+}
 .content ul.menu-list.active li #show-items:checked ~ ul {
   max-height: 100vh;
 }

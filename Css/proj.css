@@ -191,78 +191,85 @@ nav.navbar .content .logo a img.ML {
 
 
 
+
 @media (max-width: 868px) {
-    .content ul.menu-list li a.desktop-link {
-      display: none;
+  .content ul.menu-list li a.desktop-link {
+    display: none;
+}
+.content #show-features:checked ~ ul {
+  max-height: 100vh;
+}
+
+.content ul.menu-list a.desktop-link {
+  display: none;
+}
+.content ul.menu-list.active li #show-items:checked ~ ul {
+  max-height: 100vh;
+}
+
+.content ul.menu-list li label {
+  line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+}
+
+  body.disabledScroll{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+    height: 47px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn{
+    display: none;
+  }
+  .icon.cancel-btn.show{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
   }
   
-  .content ul.menu-list.active li #show-items:checked ~ ul {
-    max-height: 100vh;
+  .content ul.menu-list ul,
+  .content ul.menu-list ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
   }
-  
-  .content ul.menu-list li label {
-    line-height: 40px;
-      font-size: 20px;
-      display: block;
-      padding: 8px 18px;
-      cursor: pointer;
-  }
-  
-    body.disabledScroll{
-      overflow: hidden;
-    }
-    .icon{
-      display: block;
-      height: 47px;
-      width: 50px;
-      text-align: center;
-      border-radius: 50%;
-      z-index: 9;
-    }
-    .icon.cancel-btn{
-      display: none;
-    }
-    .icon.cancel-btn.show{
-      display: block;
-    }
-    .icon.hide{
-      display: none;
-    }
-    .navbar .menu-list{
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      background: #222;
-      display: block;
-      padding: 40px 0;
-      text-align: center;
-      clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
-      transition: all 0.3s ease;
-    }
-    .navbar.sticky .menu-list{
-      clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
-    }
-    .navbar .menu-list.active{
-      clip-path: circle(75%);
-    }
-    .navbar .menu-list li{
-      margin-top: 45px;
-    }
-    .navbar .menu-list li a{
-      font-size: 23px;
-    }
-    
-    .content ul.menu-list ul,
-    .content ul.menu-list ul ul{
-      position: static;
-      opacity: 1;
-      visibility: visible;
-      background: none;
-      max-height: 0px;
-      overflow: hidden;
-    }
   
   
   }

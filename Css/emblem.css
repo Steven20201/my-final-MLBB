@@ -42,11 +42,17 @@ body {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 70px;
+    padding: 100px 20px 30px 20px;
     align-items: center;
     color: rgb(255, 255, 255);
     color: lightgoldenrodyellow;
     text-shadow:-3px 6px 2px #000, 1px 1px 30px rgb(19, 14, 14), 1px 1px 40px rgb(27, 24, 224), 1px 1px 50px rgb(5, 1, 255);
+  }
+
+  .container .title .tlt {
+    box-shadow: inset 1px 2px 20px 20px #e8d6c4;
+    padding: 20px;
+    border-radius: 20px;
   }
 
   section#emblems .emblems-det {
@@ -353,20 +359,32 @@ body {
     list-style: none;
   }
   
-  .menu-list li a, .menu-list li label{
+  .menu-list li a{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    
     padding: 20px;
     text-decoration: none;
     transition: all 0.3s ease;
   }
   
+   .menu-list li label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+   }
   .content ul.menu-list li label {
     display: none;
   }
   
+.content ul.menu-list ul li {
+  padding: 5px 10px; 
+}
   
   .menu-list li a:hover, 
   .menu-list li label:hover{
@@ -407,6 +425,7 @@ body {
   
   .content ul.menu-list li:hover > ul {
     top: 70px;
+    margin: 10px 20px;
     opacity: 1;
     visibility: visible;
     transition: all 0.5s ease;
@@ -438,12 +457,19 @@ body {
 
 
 
-  
-@media (max-width: 868px) {
+
+
+  @media (max-width: 868px) {
     .content ul.menu-list li a.desktop-link {
       display: none;
   }
+  .content #show-features:checked ~ ul {
+    max-height: 100vh;
+  }
   
+  .content ul.menu-list a.desktop-link {
+    display: none;
+  }
   .content ul.menu-list.active li #show-items:checked ~ ul {
     max-height: 100vh;
   }
@@ -461,10 +487,9 @@ body {
     }
     .icon{
       display: block;
-      height: 50px;
+      height: 40px;
       width: 50px;
       text-align: center;
-      line-height: 30px;
       border-radius: 50%;
       z-index: 9;
     }
@@ -513,14 +538,7 @@ body {
       overflow: hidden;
     }
   
-    #home {
-      padding-top: 10rem;
-    }
   
-  
-  #links .card .overlay {
-    padding: 10px;
-  }
   }
 
   
@@ -633,13 +651,13 @@ body {
   background: linear-gradient(123deg, #00093c, #2d0b00);
   position: relative;
   width: 100%;
-  height:1150px;
+  height: 568px;
   color: #ccc;
   bottom: 0px;
 }
 
 .footer .location {
-  background: linear-gradient(180deg,rgb(61, 61, 240),rgb(18, 199, 245), transparent,transparent, rgb(18, 199, 245));
+ 
   padding: 10px;
  
 }
@@ -813,20 +831,29 @@ form button .fa {
   font-size: 10px;
 }
 
-
-@media screen and (min-width:740px) {
-  .footer{
-    height: 500px;
+@media screen and (max-width: 450px) {
+ 
 }
+@media screen and (min-width:740px) {
+
 
 .footer .footer-content{
     display: flex;
 }
 
-.footer .location {
-    display: flex;
-    
+
+.footer .footer-content .socials
+{ line-height: 3rem;}
+
+.footer .footer-content .links ul li
+{
+line-height: 4rem}
+
+
+form {
+margin-bottom: 15px;
 }
+
 
 .footer .footer-content .footer-section{
   flex: 1;
@@ -834,10 +861,15 @@ form button .fa {
 }
 }
 
-@media screen and (min-width:900px) {
-  .footer{
-    height: 550px;
+@media screen and (max-width: 560px) {
+  .footer {
+    height:1100px !important;
+  }
 }
+
+
+@media screen and (min-width:900px) {
+
 
 .footer .footer-content .socials a {
   padding: 9px;
@@ -853,3 +885,24 @@ form button .fa {
 
 /*end of the footer*/
 
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: linear-gradient(106deg, #0920f1, #0920f1,transparent, transparent);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(226, 64, 191);
+}
