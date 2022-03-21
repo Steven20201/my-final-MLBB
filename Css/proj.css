@@ -84,11 +84,11 @@ nav.navbar .content .logo a img.ML {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.menu-list li a {
+.menu-list li a, .menu-list li label {
   color: #fff;
   font-size: 1.3em;
   font-weight: 600;
-  margin-left: 25px;
+ 
   padding: 20px;
   text-decoration: none;
   text-shadow: 3px 1px #eb7e09, 3px 1px 20px #e74412, 3px 1px 30px #fd4b04;
@@ -134,6 +134,7 @@ nav.navbar .content .logo a img.ML {
   top: 80px;
   z-index: -1;
   opacity: 0;
+  margin: 15px 20px;
   visibility: hidden;
 }
 
@@ -144,6 +145,9 @@ nav.navbar .content .logo a img.ML {
   transition: all 0.5s ease;
 }
 
+.content ul.menu-list ul li {
+  padding: 5px 10px;
+}
 
 .content ul.menu-list ul li a{
   display: block;
@@ -220,7 +224,7 @@ nav.navbar .content .logo a img.ML {
   }
   .icon{
     display: block;
-    height: 47px;
+    height: 39px;
     width: 50px;
     text-align: center;
     border-radius: 50%;
@@ -274,15 +278,31 @@ nav.navbar .content .logo a img.ML {
   
   }
   
-
+.na-ad {
+  height: 120px;
+}
   .na {
     color: wheat;
-    padding-top: 100px;
-    width: 100%;
+  
+    padding-top: 30px;
+    width: 80%;
 
   }
+ .nav-main {
+   display: flex;  
+   box-shadow: inset 1px 1px 50px 4px #2181c2;
+   align-items: center;
+ }
 
-
+ .nav-main .na-tit {
+  width: 20%;
+  text-align: center;
+  font-weight: 800;
+  padding: 20px;
+  color: wheat;
+  border-right: 1px solid wheat;
+ }
+  
   .na .sect-nav {
     border-top: 2px solid rgb(0 222 255);
     display: flex;
@@ -313,8 +333,8 @@ nav.navbar .content .logo a img.ML {
   
         .na ul.sect-nav .links::after {
         content: "";
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         background: rgb(8 235 147);
         position: absolute;
         border-radius: 10px;
@@ -323,9 +343,14 @@ nav.navbar .content .logo a img.ML {
         transform: translatex(-50%);
         border: 2px solid rgb(254 138 0);
       }
-
+@media screen and (max-width: 900px) {
+    .links a span {
+      visibility: visible !important;
+      text-shadow: 1px 1px #29e58e, 1px 1px #78ff00;
+    }
+}
         .links:hover::after {
-          background: rgb(255, 2, 2);
+          background: rgb(255, 2, 2) !important;
           cursor: pointer;
         }
 
@@ -782,7 +807,7 @@ margin-bottom: 15px;
   margin: 10px;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 740px) {
   .footer {
     height:1100px !important;
   }
@@ -813,6 +838,7 @@ margin-bottom: 15px;
     font-size: 18px;
     padding: 15px;
     border: none;
+    box-shadow: inset 2px 1px 17px 0px #484545;
     outline: none;
     background: linear-gradient(106deg, #09f1ed, #09f1ed,transparent, transparent);
     color: white;
