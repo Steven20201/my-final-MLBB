@@ -752,6 +752,7 @@ margin-bottom: 15px;
 .wrapper .button_grp ul{
 	display: flex;
   gap: 10px;
+  padding: 20px 0;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -801,6 +802,7 @@ margin-bottom: 15px;
 .button_grp ul li:hover{
 	background: linear-gradient(0deg, transparent,#bf811c78,#6d5d1b7d,#916523b8, transparent);
 	color: #fff;
+  box-shadow: 0px 0px 15px 3px #daa700;
   text-shadow: 3px 1px black;
 }
 
@@ -841,6 +843,7 @@ margin-bottom: 15px;
 .wrapper .item_grp .item a .card-1 .overlay {
   position: absolute;
   bottom: 0px;
+  box-shadow: inset 1px 2px 20px 4px black;
   background: linear-gradient(0deg, #080088,#050052, transparent);
   color: wheat;
   text-shadow: 2px 1px #f67c00;
@@ -861,6 +864,41 @@ margin-bottom: 15px;
 
 }
 
+
+.search {
+  width: 100%;
+  padding: 30px 100px;
+
+}
+
+.search-bar {
+  width: 85%;
+}
+
+.sort {
+  width: 25%;
+  padding: 20px;
+ align-items: center ;
+ display: flex;
+  justify-content: center;
+}
+.sortable{
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+.search input[type="text"]{
+  width: 100%;
+  
+    box-shadow: 1px 2px 50px 9px #0532eb;
+    padding: 20px;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-radius: 20px;
+      border: 1px solid black;
+    background-color: black;
+    color: rgb(222, 245, 17);
+}
 
 @media screen and (max-width: 930px) {
   .button_grp ul li {

@@ -14,9 +14,8 @@
 </head>
 <style>
 .item {
-  opacity: 0;
   transform: translateY(100px);
-  -webkit-transition: all 500ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
   transition: all 600ms ease-in-out;
 }
 
@@ -91,8 +90,15 @@
                  </div>
     
         <div class="wrapper" style="background-color: black; "> 
-        
 
+                <div class="search">
+                    <div class="search-bar">
+                        <input type="text" id="myInput"  placeholder="Search for names.." title="Type in a name">
+                    </div>
+                  
+                </div>
+
+                
                 <div class="button_grp">
                     <ul>
                         <li data-li="all" class="btn active">All</li>
@@ -105,7 +111,7 @@
                     </ul>
                 </div>
 
-                <div class="item_grp">
+                <div id = "item_grp" class="item_grp">
                     <div class="item marksman">
                     
                         <a href="Miya.html">
@@ -212,7 +218,7 @@
                     </div>
                     <div class="item fighter mage">
                     
-                        <a href="#">
+                        <a href="Bane.html">
                             <div class="card-1">
                                 <img src="image/Frozen_King.webp" alt="Bane">
                                 <div class="overlay">Bane</div>
@@ -222,7 +228,7 @@
                     </div>
                     <div class="item marksman">
                     
-                        <a href="#">
+                        <a href="Bruno.html">
                             <div class="card-1">
                                 <img src="image/The_Protector_(rework).jpg" alt="Bruno">
                                 <div class="overlay">Bruno</div>
@@ -232,7 +238,7 @@
                     </div>
                     <div class="item marksman">
                     
-                        <a href="#">
+                        <a href="Clint.html">
                             <div class="card-1">
                                 <img src="image/Clint_infobox.jpg" alt="Clint">
                                 <div class="overlay">Clint</div>
@@ -243,7 +249,7 @@
 
                     <div class="item support">
                     
-                        <a href="#">
+                        <a href="Refeala.html">
                             <div class="card-1">
                                 <img src="image/Wings_of_Holiness.jpg" alt="Rafeala">
                                 <div class="overlay">Rafeala</div>
@@ -989,7 +995,7 @@
                     </div>
                     <div class="item fighter">
                     
-                        <a href="#">
+                        <a href="Dyrroth.html">
                             <div class="card-1">
                                 <img src="image/600px-Dyrroth_infobox.jpg" alt="Dyrroth">
                                 <div class="overlay">Dyrroth</div>
@@ -1342,13 +1348,16 @@
     document.documentElement.scrollTop = 0; 
 }
     </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script>
-        
-  
-
-
-
-    
+        $(document).ready(function(){
+          var $search = $('#myInput').on('input',function(){
+              var matcher = new RegExp($(this).val(),'gi');
+              $('.item').show().not(function(){
+                  return matcher.test($(this).find('.overlay').text())
+              }).hide();
+          })
+        })
    
 
     </script>
