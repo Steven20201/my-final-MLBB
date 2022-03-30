@@ -292,7 +292,7 @@ nav.navbar .content .logo a img.ML {
 
 
 .footer {
-  background: linear-gradient(123deg, #00093c, #2d0b00);
+  background: linear-gradient(34deg, #00fd9b70,#2fb18d8c, #378979);
   position: relative;
   width: 100%;
   height: 568px;
@@ -357,7 +357,7 @@ nav.navbar .content .logo a img.ML {
   text-align: left;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
-  color: #636666;
+  color: #db840f;
   margin: 10px 0; 
 }
 
@@ -366,7 +366,7 @@ nav.navbar .content .logo a img.ML {
   text-align: left;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
-  color: #636666;
+  color: #db840f;
   margin: 10px 0; 
 }
 
@@ -393,13 +393,16 @@ nav.navbar .content .logo a img.ML {
   color: #ccc;
 }
 
+.footer .footer-content .links ul li a:hover{
+  text-shadow: 0 0 6px black, 0 0 9px #ffc300, 2px 1px 0px #0eff4b;
+}
 .footer .footer-content .socials {
   margin-left: 10px;
   padding: 10px 0;
 }
 
 .footer .footer-content .socials .fa{
-  color: blue;
+  color: #000000;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -409,6 +412,29 @@ nav.navbar .content .logo a img.ML {
   background-color: #fff;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.footer .footer-content .socials .fa.fa-facebook:hover {
+  box-shadow: 0px 0px 10px 6px #0576f8;
+
+  color: #0576f8;
+}
+.footer .footer-content .socials .fa.fa-instagram:hover {
+ box-shadow: 0px 0px 10px 6px #E1306C;
+ background: linear-gradient(150deg, #405DE6,#5851D8,#833AB4,#C13584,#E1306C, #FD1D1D,#F56040, #F77737,#FCAF45) ;
+ color: #fff;
+}
+.footer .footer-content .socials .fa.fa-youtube-play:hover {
+ box-shadow: 0px 0px 10px 6px #f80505;
+ color: #f80505;
+}.footer .footer-content .socials .fa.fa-chrome:hover {
+ box-shadow: 0px 0px 10px 6px #05f82dc5;
+ color: #05f82dc5;
+}
+
+.footer .footer-content .socials .fa.fa-twitter:hover {
+ box-shadow: 0px 0px 10px 6px #05c7f8;
+ color: #05c7f8;
 }
 
 .footer .footer-content .socials a {
@@ -422,7 +448,7 @@ nav.navbar .content .logo a img.ML {
   text-align: left;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
-  color: #636666;
+  color: #db840f;
   margin: 10px 0;
 }
 
@@ -544,7 +570,7 @@ margin-bottom: 15px;
 
 
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 740px) {
   .footer {
     height:1100px !important;
   }
