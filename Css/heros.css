@@ -266,10 +266,10 @@ body {
 
 .title-con{
   font-size: 55px;
-  color: rgb(247, 213, 151);
+  color: black;
   font-weight: 700;
   padding: 20px;
-  text-shadow: 0px 0px 20px #f4f0f0, 0px 0px 30px #ee6363, 0px 0px 40px #ac2424, 0px 0px 50px #de0a0a, 0px 0px 60px #620d0d, 0px 0px 70px #3b0606;
+  text-shadow: 0px 0px 20px #04d0c6, 2px 1px #20fd00, 0px 0px 40px #e0dd10;
 }
 
 
@@ -379,7 +379,7 @@ body {
 #main .main-top .first-cont .mastery h2 {
   color: rgb(231, 196, 130);
   text-align: center;
-  text-shadow: 0px 0px 20px #04d0c6, 2px 2px 0px #9819de, 0px 0px 40px #e0dd10;
+  text-shadow: 0px 0px 20px #04d0c6, 2px 1px #20fd00, 0px 0px 40px #e0dd10;
   padding: 20px;
 margin-top: 20px;
 }
