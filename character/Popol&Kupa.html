@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends: Bang Bang</title>
+    <link rel="shortcut icon" href="image/applogo.png" type="images/x-icon">
+    <link rel="stylesheet" href="flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Css/heros.css">
+    
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+       .im2,.im2_1 {
+        position: absolute !important;
+                                        top: 15px;
+                                        left: 70px;
+    }
+    @media screen and (max-width:850px) {
+        .cont,.cont_1 {
+                left: 145px !important;
+            }
+    }
+        @media screen and (max-width: 660px) {
+            .cont,.cont_1 {
+                left: 100px !important;
+            }
+            .im2,.im2_1{
+                top: 10px;
+                left: 10px;
+            }
+        }
+      @media screen and (max-width: 420px) {
+            .cont,.cont_1 {
+                left: 78px !important;
+            }
+
+            .im2,.im2_1{
+                top: 10px;
+                left: 10px;
+            }
+        }
+        .cont,.cont_1 {
+            z-index: 2;
+            position: absolute;
+            left: 208px ;
+        }
+    .images .im, .images_1 .im_1{
+        opacity: 0;
+        z-index: 1;
+    }
+
+   
+    .images .im2, .images_1 .im2_1 {
+        opacity: 1;
+        z-index: 3;
+    }
+
+    .im, .im_1 {
+    
+        opacity: 1;
+        z-index: 3;
+    
+    }
+
+    .im2, .im2_1 {
+    
+    opacity: 0;
+    z-index: 1;
+
+}
+    @media screen and (min-width: 850px) {
+        #main, #main-1, #main-2, #main-3{
+   
+            
+   
+    background-position: center !important;
+    
+    }
+   
+    }
+    #main, #main-1, #main-2, #main-3 {
+      background-position: -110px;
+      height: 101vh; 
+      background-image: url(./image/MLBB_PopolandKupa.jpg);
+     
+        background-size: cover;
+        background-attachment: fixed;
+    z-index: -1;
+    max-width: 100%;
+    }
+
+    @media screen and (max-height: 655px) {
+        #main, #main-1, #main-2, #main-3 {
+            background-position: center !important;
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="character.html">
+                  <div class="character">Characters</div>
+                </a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fa fa-times"></i>
+                </div>
+                <li><a class="tablink" id="defaultOpen" onclick="openPage('main',this,'rgb(243, 215, 164)')">Heroes</a></li>
+                <li><a  class="tablink" onclick="openPage('main-1',this,'rgb(243, 215, 164)')">Ability</a></li>
+                <li><a class="tablink" onclick="openPage('main-2',this,'rgb(243, 215, 164)')">Guide</a></li>
+                <li><a class="tablink" onclick="openPage('main-3',this,'rgb(243, 215, 164)')">Skin</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+        <section id="main" class="tabcontent">
+         
+                 <div class="icons">
+                  <img src="image/marksman.png" alt="" style=" float: left; padding: 10px; width: 8em;">
+                <div class="title-con">Popol and Kupa</div>
+            </div>
+          
+                     <div class="det">
+                        <p>(Marksman)</p>
+                            <p>Push/Burst</p>
+                    </div>
+            <div class="main-top">
+                <div class="first-cont">
+                        
+                
+                    <div class="details">
+                    
+                        <div class="ratio">
+                            <div class="main-perc">
+                                <label>Durability</label>
+                                
+                                <div class="meter orange">
+                                    <span style="width: 40%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                <label>Offense</label>
+                                    
+                                <div class="meter yellow">
+                                    <span style="width: 70%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                <label>Skill Effects</label>
+                                
+                                <div class="meter blue">
+                                    <span style="width: 30%"></span>
+                                </div>
+                            </div>
+                            <div class="main-perc">
+                                    <label>Difficulty</label>
+                                    
+                                    <div class="meter green">
+                                        <span style="width: 20%"></span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mastery">
+                        <h2>Mastery Code</h2>
+                        <div class="chap-1">
+                            <h1>Chapter 1 :  The Brave Pair</h1>
+                            <h4>Task Target: Hit Heroes with [Bite 'em, Kupa] 60 times in total.</h4>
+                            <p>Grown in the Northern Vale, mischievous Popol is a real eye-catcher in the Feldans. This little guy is a master of wicked ideas and king of adventures. A born warrior, like all Northern Valers, Popol has been practicing spear since childhood and is quite good at it. During his adventures, Popol met Kupa, a dire wolf also caught in a hunter's trap, and they've always been together ever since. On the vast Land of Dawn, they trust and help each other through their adventurous journey. Kupa protects the naive and brave Popol by defeating strong enemies time and time again, and their names gradually spread far and wide on the continent.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 2 : Best Partner</h1>
+                            <h4>Task Target:  Win 2 match(es) with the fewest death on team.</h4>
+                            <p>Popol and Kupa venture into a new world, leaving their footprints on the Land of Dawn. During. their adventures, they often helped others and rescued races in danger. Their friendship grows with their experiences. Because Kupa's front paw was injured by a trap before, Popol gives Kupa meticulous care and thrusts himself forward to face all challenges, even at the cost of his life, which gives Kupa a keener sense of human kindness and warmth. Protecting Kupa is a lifelong responsibility for Popol, and their friendship is strong enough to beat any enemy.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 3 : Spirit of the North</h1>
+                            <h4>Task Target:  Fight alongside with Heroes from the Northern Vale and win 2 matches.</h4>
+                            <p>The Feldans, the home of Popol, is an ordinary nomadic tribe in central Northen Vale. Like many other Northern Valers, the Feldans live a quiet hunting life near a forest hunting ground with limited resources. Courage and defiance is in their blood, and the Great Martyr Shrine will guard them forever. Whenever the Northern Vale is in a danger, the tribes will fight together, whether it is by a disaster or powerful opponents. Freya the Valkyrie, Franco the Frozen Warrior and Aurora the Frost Oracle, as well as Popol and Kupa are the strongest warrior to guard their land.</p>
+                        </div>
+                        <div class="chap-1">
+                            <h1>Chapter 4 : We Are Angry</h1>
+                            <h4>Task Target: Get 3 Triple Kills with We are Angry! activated.</h4>
+                            <p>In the Northern Vale, Popol has made a new friend with unbelievable power, enough for them to overcome any incredible challenges by fighting together. As the new friend of Popol, Kupa protects the naive and brave Popol and helps him to realize those adventurous dreams. Popol and Kupa start their new journey in the ice land and face all challenges together, no matter how harsh the environment or how strong the enemy is. Whenever Popol is in despair, Kupa is always there. A loud wolf howl is a signal of their counterattack. Don't underestimate their strength and take it lightly, as the fangs of the wolf and the spear of the tribe may have already picked you as their prey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <div class="about" style="color: rgb(231, 196, 130);">
+            <div class="content">
+                
+              <div class="title">Story</div>
+              <div class="story-details">
+                  <p>The Feldans are an ordinary nomad tribe found in the middle of Northern Vale. Like most of the local people, they reside near the forest and live a peaceful and slow-paced life, as experienced hunters.</p>
+                <p>But there was one exception. Popol, a naughty boy who had been known as the expert prankster and the little adventurer of the tribe, always seemed to be at the center of attention. Unlike the other quiet and composed Northern Valers, he was full of vigor and imagination. Thanks to the warrior tradition of Northern Vale, Popol mastered the art of spear-throwing since his childhood. He often joined the adults in their hunting and return with a cart full of prey.</p>
+                <p>Listening to the adults singing songs about legendary heroes after drinking, was his favorite pastime. He dreamt of becoming one of them and have his name sung by others like Popol, the Fearless.</p>
+                <p>However, his tribesmen didn't take his ambition seriously and laughed about it as if it were some childish daydream. Popol apparently couldn't stand that. In order to impress the others, he pulled all kinds of well-schemed pranks on them, resulting only in the villagers, especially kids, seeing him as a freak and staying away from him.</p>
+                <p>The more alienated he was, the more eager he became to draw their attention by pulling even more pranks. However, that kept achieving the opposite effects. In the end, he had no friends left. Alone and desperate, he decided to do something extraordinary to reverse his image once and for all.</p>
+                <p>On a dark night, Popol left the village and ventured into the mountains. He planned to kill a ferocious frost wolf all by himself to impress the others. He stumbled into the thick forest and investigated his surroundings curiously. As expected, he lost orientation in the dark and fell into a trap.</p>
+                <p>As Popol stumbled into the deep pit, he hit his head on a rock, gazing his vision. After he regained consciousness, he looked around, wondering where he was, and the first thing he saw at the bottom of the hole was a pair of glowing blue eyes, which scared him off his feet. But when the moonlight shone into the trap, he saw the owner of the eyes - a trapped frost wolf, whom he later gave the name Kupa. One of it's front feet was clamped and hurt by a beast trap and due to starvation, it could barely move.</p>
+                <p>Popol could have killed Kupa then and there, but when he raised his spear, he saw the same loneliness in Kupa's eyes. If he killed Kupa, he would be completely alone in the darkness of the trap. Hesitantly, he put down the spear and tried to help Kupa.</p>
+                <p>At first, they were defensive and hostile towards the other. But in time. the two lonely souls finally lowered their guard and regarded the other as the same kind. Despite being trapped in the pit, they got a warm feeling in the presence of the other. The beast trap became the bridge of their friendship. And perhaps due to their loneliness, Popol treated Kupa as a listener and playmate. He even playfully threw snowballs on Kupa's snout.</p>
+                <p>But at this point, Kupa was almost starving to death. Popol hesitated for a while, before sharing the food he carried, with the dying Kupa.</p>
+                <p>However, Popol decided to feed Kupa and Kupa was eventually saved from starvation. In Kupa's mind, all humans were cold and ruthless like the hunters. It was usually always a life-and-death situation between them and the frost wolves. But Popol was different. Having been hunted alone in the forest since it was born, Kupa felt kindness and warmth for the first time from Popol. As time went by, Popol and Kupa started surviving on rats and other small creatures, that Popol would catch with his spear and then share with Kupa.</p>
+                <p>A few days passed, and the two formed a subtle friendship. Unfortunately, there wasn't much food or rats left for them to survive. And to make it even worse, their first visitors were not people coming to rescue them, but a group of vultures. They flocked to the trap and began to attack. Popol threw his spear at the vultures, but he couldn't fend them off, while Kupa could only fight aimlessly with one free paw.</p>
+                <p>Under the continuous harassment of the vultures, they were becoming the birds' meal. Ot was at this time of danger that Popol made a remarkable decision - he threw down the spear and with all his strength, tore open the beast trap, in order to help Kupa escape. With his back exposed, he was caught by a vulture and lifted off the trap in mid-air. Just as Popol lost all hope, a thundering roar broke out. Kupa leaped out of the pit and pounced on the vulture, freeing Popol from it's grasp.</p>
+                <p>Now, with both fighting side by side, Popol and Kupa demonstrated incredible synergy and repelled all the vultures for good. Henceforth, they became the best partners in adventure. They traveled the frozen lands and together, began a new chapter in the tale of their adventure.</p>
+              </div>
+              <div class="skill-details">
+                  <div class="table-heading">
+                      Attributes
+                  </div>
+                  <table>
+                    <tr>
+                        <th>HP</th>
+                        <td>2425</td>
+                    </tr>
+                    <tr>
+                        <th>HP Regen</th>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th>Physical ATK</th>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <th>Physical Defense</th>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <th>Attack Speed</th>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <th>Attack Speed</th>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <th>Mana</th>
+                        <td>445</td>
+                    </tr>
+                    <tr>
+                        <th>Mana Regen</th>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th>Magic Power</th>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>Magic Defense</th>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th>Movement SPD</th>
+                        <td>250</td>
+                    </tr>
+                  </table>
+              </div>
+            
+            </div>
+          </div>
+            </div>
+        
+           
+          
+        </section>
+        
+        <section id="main-1" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Skills</div>
+            </div>
+            <div class="tabs tabs-style-iconbox" style="color: bisque;">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home"><img src="image/We_Are_Friends.webp" alt="">We are Friends</a></li>
+                        <li>
+                            <a href="#section-iconbox-2" class="icon icon-gift">
+                                <div class="conts">
+                                     <div class="cont">
+                                            <i class="fa fa-refresh"></i>
+                                        </div>
+                                        <div class="im">
+                                            <img src="image/Bite_em_Kupa.webp" alt="">
+                                        </div>
+                                        <div class="im2" >
+                                            <img src="image/Bite_em_Kupa_Alpha_Wolf_Form.webp" alt="">
+                                    </div>
+                                </div>
+                               
+                                Bite 'em, Kupa!
+                            </a>
+                        </li>
+                        <li><a href="#section-iconbox-3" class="icon icon-upload">
+                            <div class="conts_1">
+                                <div class="cont_1">
+                                       <i class="fa fa-refresh"></i>
+                                   </div>
+                                   <div class="im_1">
+                                       <img src="image/Kupa Help.webp" alt="">
+                                   </div>
+                                   <div class="im2_1" >
+                                       <img src="image/Kupa_Help_Alpha_Wolf_Form.webp" alt="">
+                               </div>
+                           </div>
+                           Kupa, Help!</a></li>
+                        <li><a href="#section-iconbox-4" class="icon icon-coffee"><img src="image/Popols_Surprise.webp" alt="">Popol's Surprise</a></li>
+                        <li><a href="#section-iconbox-5" class="icon icon-coffee"><img src="image/We_Are_Angry.webp" alt="">We Are Angry</a></li>
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>We Are Friends</h2>
+                                <div class="buff">
+                                    <span> BUFF </span>
+                                
+                                </div>
+                                <div class="passive" >
+                                    <span>Passive</span>
+                                    <br><i>Popol and Kupa always fight alongside each other.</i>
+                                </div>
+                            </div>
+                            <div class="description" style="border-bottom: 0;" >
+                                <p>Kupa recovers 10% Max HP per second after not taking damage for 5s. When Kupa is killed, Popol can pray for 3s to bring it back to the battlefield. Cooldown: 45s.</p><p>After every 3 consecutive attacks, Kupa enhances Popol's next attack, allowing him to deal <span style="color: rgb(238, 129, 4)">(+220%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span>. Kupa has 2500 <span style="color: rgb(238, 129, 4)">(+1200%Total Physical ATK)</span> Max HP and inherits 100% of Popol's other attributes and passive equipment effects.</p>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </section>
+                    <section id="section-iconbox-2">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Bite 'em, Kupa!</h2>
+                                <div class="two-buff"> 
+                                     <div class="Aov">
+                                        <span> Damage </span>
+                                    </div>
+                                     <div class="CC">
+                                        <span> CC </span>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 6.0  Mana Cost: 40  Type: Physical ATK</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Popol throws a spear at the target for 80–170  <span style="color: rgb(238, 129, 4)">(+100%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> and orders Kupa to lunge at the enemy, dealing 100 <span style="color: rgb(238, 129, 4)">(+75%Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> and locking onto them for 3 seconds.</p><p><span style="color: rgb(128, 83, 231);">Alpha Wolf Form: </span>Kupa stuns the enmey for 1s and bites them 3 times in quick succession.</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                    <th>Lv.4</th>
+                                   
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Cooldown</td>
+                                    <td>6.5</td>
+                                    <td>6.5</td>
+                                    <td>6.5</td>
+                                    <td>6.5</td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>70</td>
+                                    <td>80</td>
+                                    <td>60</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Base Damage</td>
+                                    <td>100</td>
+                                    <td>130</td>
+                                    <td>160</td>
+                                    <td>190</td>
+                                   
+                                </tr>
+                              
+                            </table>
+                        </div>
+                        
+                    </section>
+
+                    <section id="section-iconbox-3">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Kupa, Help!</h2>
+                                <div class="two-buff">
+                                    
+                                     <div class="CC">
+                                        <span> CC </span>
+                                    </div>
+                                    <div class="Aov">
+                                        <span> AoE </span>
+                                    </div>
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 6.5  Mana Cost: 80  Type: Physical Skill</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Popol summons Kupa to protect him, gaining a 240-330  <span style="color: rgb(238, 129, 4)">(+200%Extra Physical ATK)</span> <span style="color:red;">Physical Damage</span> shield while dealing 240 <span style="color: rgb(238, 129, 4)">(+50% Total Physical ATK)</span> <span style="color:red;">Physical Damage</span> to nearby enemies and slowing them by 35% for 0.5s. Kupa will then assist Popol to attack nearby enemies for 3s.</p><p> <span style="color: rgb(128, 83, 231);">Alpha Wolf Form: </span>Kupa darts back to protect its master and knocks nearby enemies airborne for 0.2 seconds. The shield and damage are increased to 125%.</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                    <th>Lv.4</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Cooldown</td>
+                                    <td>6.5</td>
+                                    <td>6.5</td>
+                                    <td>6.5</td>
+                                    <td>6.5</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Mana Cost</td>
+                                   
+                                    <td>80</td>
+                                   
+                                    <td>90</td> 
+                                    <td>100</td>
+                                    <td>110</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Base Shield</td>
+                                    <td>240</td>
+                                    <td>270</td>
+                                    <td>300</td>
+                                    <td>330</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Base Damage</td>
+                                    <td>240</td>
+                                    <td>270</td>
+                                    <td>300</td>
+                                    <td>330</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </section>
+                    <section id="section-iconbox-4">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>Popol's Surprise</h2>
+                                <div class="two-buff"> 
+                                    <div class="Aov" style="background-color: rgb(0, 162, 255);">
+                                        <span> Summon </span>
+                                    </div>
+                                     <div class="CC">
+                                        <span> CC </span>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 1.5  Mana Cost: 60</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Popol sets a trap at the target location that will detonate after a short delay once triggered, dealing 70 <span style="color: aqua;">(+20% Total Magic Power)</span> <span style="color:red;">Physical Damage</span> to the enemy that steps on it, immobilizing them for 1s, and creating a frost zone for 4s. Enemies in the frost zone will have their Movement Speed reduced by 20%.</p>
+                                <p>Popol gains a trap charge every 22s (up to 3). Up to 3 traps can exist at the same time on the battlefield, each lasting up to 60s.</p>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                    <th>Lv.4</th>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>60</td>
+                                    <td>50</td>
+                                    <td>40</td>
+                                    <td>30</td>
+                                </tr>
+                                
+                                
+                                <tr>
+                                    <td class="tab-main">Base Damage</td>
+                                    <td>70</td>
+                                    <td>80</td>
+                                    <td>90</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Recharging Time</td>
+                                    <td>22</td>
+                                    <td>20</td>
+                                    <td>18</td>
+                                    <td>16</td>
+                                </tr>
+                                 
+                            </table>
+                        </div>
+                    </section>
+                    <section id="section-iconbox-5">
+                        <div class="moon-bless">
+                            <div class="skills">
+                                <h2>We Are Angry</h2>
+                                <div class="two-buff"> 
+                                   
+                                     <div class="buff">
+                                        <span> BUFF </span>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <div class="passive">
+                                    <span>CD: 39.0  Mana Cost: 100</span>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p> Popol and Kupa enter the Enraged state for 12 seconds: Popol and Kupa both gain 15% extra Movement Speed and increase their Attack Speed to 1.3 times.
+                                    Kupa turns into the <span style="color: rgb(128, 83, 231);">Alpha Wolf Form</span>, gains 1500–3500 Max HP, while enhancing its other skills.
+                                    </p>
+                               
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th>Lv.1</th>
+                                    <th>Lv.2</th>
+                                    <th>Lv.3</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Cooldown</td>
+                                    <td>38.0</td>
+                                    <td>35.0</td>
+                                    <td>32.0</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">Skill Cost</td>
+                                    <td>100</td>
+                                    <td>120</td>
+                                    <td>140</td>
+                                
+                                </tr>
+                               
+                                
+                                <tr>
+                                    <td class="tab-main">ATK Speed Boost</td>
+                                    <td>1.3</td>
+                                    <td>1.5</td>
+                                    <td>1.7</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="tab-main">HP Boost</td>
+                                    <td>1500</td>
+                                    <td>2500</td>
+                                    <td>3500</td>
+                                    
+                                </tr>
+                                 
+                            </table>
+                        </div>
+                    </section>
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+          
+        </section>
+       
+
+
+        <section id="main-2" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Popol and Kupa Guide</div>
+            </div>
+            
+
+            <div class="tabs tabs-style-iconbox" style="color: rgb(255, 153, 0);">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home">Item Set</span></a></li>
+                        <li><a href="#section-iconbox-2" class="icon icon-gift">Best Emblem</span></a></li>
+                        <li><a href="#section-iconbox-3" class="icon icon-gift">Media</span></a></li>
+                        <li><a href="#section-iconbox-4" class="icon icon-gift">Counters</span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <h3 style="text-align: left; padding: 20px 0;">Default Builds</h3>
+                        
+                        <div class="att">
+                            <h3>Attack Speed</h3>
+                            <div class="atkitem">
+                                <div class="eqi">
+
+                                    <img src="image/Demon_Hunter_Sword.png" alt="Demon_Hunter_Sword">
+                                    <span>Demon Hunter Sword</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Swift_Boots.png" alt="Swift Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                               
+                                <div class="eqi">
+                                    <img src="image/Endless_Battle.png" alt="Endless_Battle">
+                                    <span>Endless Battle</span>
+                                </div>
+                                 <div class="eqi">
+                                    <img src="image/Windtalker.png" alt="Windtalker">
+                                    <span>Windtalker</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Immortality.png" alt="Immortality">
+                                    <span>Immortality</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Blade of Despire.png" alt="Blade of Despire">
+                                    <span>Blade of Despair</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="att">
+                            <h3>Anti Heal</h3>
+                            <div class="atkitem">
+                                <div class="eqi">
+
+                                    <img src="image/Swift_Boots.png" alt="Swift_Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Blade_of_the_Heptaseas.png" alt="Blade_of_the_Heptaseas">
+                                    <span>Blade of the Heptaseas</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Endless_Battle.png" alt="Endless_Battle">
+                                    <span>Endless Battle</span>
+                                </div> 
+                                <div class="eqi">
+                                    <img src="image/Hunter Strike.png" alt="Haas's Claws">
+                                    <span>Hunter Strike</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Blade of Despire.png" alt="Blade of Despire">
+                                    <span>Blade of Despair</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Immortality.png" alt="Immortality">
+                                    <span>Immortality</span>
+                                </div>
+                                
+                                
+                               
+                            </div>
+
+                        </div>
+
+                        <div class="att">
+                            <h3>Hot Gear</h3>
+                            <div class="atkitem">
+                                
+                                <div class="eqi">
+                                    <img src="image/Endless_Battle.png" alt="Endless_Battle">
+                                    <span>Endless Battle</span>
+                                </div> 
+                                <div class="eqi">
+
+                                    <img src="image/Swift_Boots.png" alt="Swift_Boots">
+                                    <span>Swift Boots</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Berserker_s_Fury-removebg-preview.png" alt="Berserker_s_Fury">
+                                    <span>Berserker's Fury</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/War_Axe.png" alt="War Axe">
+                                    <span>War Axe</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Immortality.png" alt="Immortality">
+                                    <span>Immortality</span>
+                                </div>
+                                <div class="eqi">
+                                    <img src="image/Blade of Despire.png" alt="Blade of Despire">
+                                    <span>Blade of Despair</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                     
+                    </section>
+
+
+
+
+                    <section id="section-iconbox-2">
+                     <div class="emb">
+                         <div class="mark-emb">
+                             <h3>Popol & Kupa Custom Marksman Set</h3>
+                             <img src="image/layla marksman emblem.png" alt="">
+                         </div>
+                         <div class="mark-emb">
+                            <h3>Popol & Kupa Custom Assassin Set</h3>
+                            <img src="image/roger assassin built.png" alt="">
+                        </div>
+                        
+                     </div>
+                     <div class="spell">
+                           <h3>Best Spell for Popol and Kupa</h3>
+                           <div class="spell-item">
+                                <div class="it">
+                             
+                           <img src="image/flicker.png" alt="Flicker">
+                           <span>Flicker</span>
+                           </div>
+                           <div class="it">
+                               
+                           <img src="image/inspore.png" alt="Inspire">
+                           <span>Inspire</span>
+                           </div>
+                           </div>
+                          
+                           
+
+                       </div>
+                        
+                    </section>
+
+
+                    
+                    <section id="section-iconbox-3">
+                      <div class="media">
+                          Some Tutorials for Popol and Kupa Gameplay
+                      </div>
+                        <div class="video">
+                            <div class="miya">
+                                <iframe src="https://www.youtube.com/embed/7vMyns4ofJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="miya">
+                                <iframe src="https://www.youtube.com/embed/EZO-ZZI-vNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="miya">
+                                <iframe  src="https://www.youtube.com/embed/9U2qwl7tsSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="miya">
+                                <iframe src="https://www.youtube.com/embed/JIwsnd76VOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                           
+                        </div>
+                    </section>
+
+
+                   <section id="section-iconbox-4">
+                      <div class="counter">
+                          <div class="counter-name">Best Teammates</div>
+                          <div class="body-name">
+                              <img src="image/grock.png" alt="Grock">
+                              <div class="lol">
+                                  <p><span style="font-weight: 700 !important;">Grock:</span> Grock, Diggie and Aurora</p>
+                              </div>
+                          </div>
+                      </div>
+                        
+
+                      <div class="counter">
+                        <div class="counter-name">Counters</div>
+                        <div class="body-name">
+                            <img src="image/helcurt.png" alt="Eudora">
+                            <div class="lol">
+                                <p><span style="font-weight: 700 !important;">Helcurt:</span> Helcurt, Hanzo and Gusion.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="counter">
+                        <div class="counter-name">Countered by</div>
+                        <div class="body-name">
+                            <img src="image/karrie.png" alt="Chou">
+                            <div class="lol">
+                                <p><span style="font-weight: 700 !important;">Karrie:</span> Karrie, Masha and Franco</p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+        </section>
+
+        <section id="main-3" class="tabcontent">
+            <div class="tab">
+                <div class="title-con">Skins</div>
+            </div>
+
+            <div class="tabs tabs-style-iconbox" style="color: bisque;">
+                <nav>
+                    <ul>
+                        <li><a href="#section-iconbox-1" class="icon icon-home">Skins</span></a></li>
+                        
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+                    <section id="section-iconbox-1">
+                        <div class="miyas"> 
+                            <div class="card">
+                                <img src="image/Icefield_Companions.jpg" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Icefield Companions</h4>
+                                
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="image/Hunting_Pals.webp" alt="Default Layla skin">
+                                <div class="ovre">
+                                <h4>Hunting Pals</h4>
+                                
+                                </div>
+                            </div>  
+                            <div class="card">
+                                <img src="image/Tribal_Howl.webp" alt="Default Miya skin">
+                                <div class="ovre">
+                                <h4>Tribal Howl</h4>
+                                
+                                </div>
+                            </div>
+                           
+                         
+                        </div>
+                       
+                        
+                    </section>
+                   
+
+                    
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/cbpFWTabs.js"></script>
+            <script>
+                (function() {
+                    [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+                        new CBPFWTabs( el );
+                    });
+    
+                })();
+            </script>
+
+        <script>
+        const item_ch_1= document.querySelector(".cont_1");
+        const control_1 = document.querySelector(".conts_1");
+        const item_ch= document.querySelector(".cont");
+        const control = document.querySelector(".conts");
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+
+        item_ch.addEventListener("click",()=>{
+            control.classList.toggle("images");
+        })
+        item_ch_1.addEventListener("click",()=>{
+            control_1.classList.toggle("images_1");
+        })
+			function openPage(pageName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.color = "";
+            }
+            body.classList.remove("disabled");
+                    navbar.classList.remove("show");
+                    menuBtn.classList.remove("hide");
+                    
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.color = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+    <script>
+        
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+</body>
+</html>

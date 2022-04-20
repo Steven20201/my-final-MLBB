@@ -658,7 +658,8 @@ margin-top: 20px;
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .skills,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .skills,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .skills,
-#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-5 .skills
 {
 text-align: left;
 }
@@ -666,7 +667,8 @@ text-align: left;
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .skills .buff,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .skills .buff,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .skills .buff,
-#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills .buff
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills .buff,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-5 .skills .buff
 {
   background: rgb(4, 126, 226);
   color: white;
@@ -702,14 +704,17 @@ padding: 0 20px;
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .moon-bless .description,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .moon-bless .description,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .moon-bless .description,
-#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .description {
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .description,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-5 .moon-bless .description  
+{
   border-bottom: 1px solid rgb(117, 183, 245);
 } 
 
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .moon-bless .description p,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .moon-bless .description p,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .moon-bless .description p,
-#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .description p
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .description p,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-5 .moon-bless .description p
 {
   font-size: 14px;
   text-align: left;
@@ -721,7 +726,8 @@ padding: 0 20px;
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .moon-bless,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .moon-bless,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .moon-bless,
-#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-5 .moon-bless
 {
   border: 1px solid #555;
   margin: 0 25px;
@@ -730,7 +736,8 @@ padding: 0 20px;
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .moon-bless .skills,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .moon-bless .skills,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .moon-bless .skills,
-#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .skills
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .moon-bless .skills,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-5 .moon-bless .skills
 {
   border-bottom: 1px solid #555;
   padding: 10px;
@@ -740,7 +747,8 @@ padding: 0 20px;
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-1 .skills .passive,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-2 .skills .passive,
 #main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-3 .skills .passive,
-#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills .passive
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-4 .skills .passive,
+#main-1.tabcontent .tabs.tabs-style-iconbox .content-wrap #section-iconbox-5 .skills .passive
 {
   font-size: 15px;
 }

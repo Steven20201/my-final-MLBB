@@ -759,7 +759,8 @@ margin-bottom: 15px;
 }
 
 .word {
-  box-shadow: inset 2px 13px 100px 20px #00ff317d;
+  box-shadow: inset 2px 13px 100px 20px #7475757d;
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 10px 20px;
   border-radius: 20px;
